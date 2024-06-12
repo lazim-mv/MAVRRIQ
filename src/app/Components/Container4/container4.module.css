@@ -1,0 +1,167 @@
+.default {
+  --font-Poppins: "Poppins", sans-serif;
+  --verticalPadding: 0 9.920634920634921vw;
+  --containerPadding: 0 6.613756613756613vw;
+  --containerMarginTop: 9.25925925925926vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --borderRadius: 0.6613756613756614vw;
+  --mobileBorderRadius: 2.666666666666667vw;
+  --padding100: 6.613756613756613vw;
+  --margin15: 0.992063492063492vw;
+  --margin20: 1.3227513227513228vw;
+  --margin30: 1.984126984126984vw;
+  --margin70: 4.62962962962963vw;
+  --margin100: 6.613756613756613vw;
+  --gap70: 4.62962962962963vw;
+  --gap20: 1.3227513227513228vw;
+  --gap30: 1.984126984126984vw;
+  --gap40: 2.6455026455026456vw;
+  --gap50: 3.3068783068783065vw;
+  --mainbgColor: #12171c;
+  --bgColor: #0c1117;
+  --font18: 1.1904761904761905vw;
+  --font24: 1.5873015873015872vw;
+  --font28: 1.8518518518518516vw;
+  --lineHeight18: 1.6666666666666667vw;
+  --lineHeight24: 2.2222222222222223vw;
+  --lineHeight28: 2.169973544973545vw;
+  --letterSpace18: 0.023809523809523808vw;
+  --letterSpace24: 0.015873015873015872vw;
+  --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14: 3.733333333333334vw;
+  --mlineHeight14: 5.226666666666667vw;
+  --mletterSpace14: 0.4266666666666667vw;
+
+  --mfont18: 4.8vw;
+  --mlineHeight18: 5.624vw;
+  --mletterSpace18: 0.4266666666666667vw;
+}
+
+.container {
+  margin-top: var(--containerMarginTop);
+  padding: var(--verticalPadding);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.greyContainer {
+  width: 80.15873015873017vw;
+  height: 35.714285714285715vw;
+  background-color: #f5f5f5;
+  padding: 1.3227513227513228vw;
+  padding-right: 2.6455026455026456vw;
+  margin-top: 4.62962962962963vw;
+  border-radius: 1.5873015873015872vw;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 25.396825396825395vw;
+  height: 33.06878306878307vw;
+  background: #082435;
+  border-radius: 1.5873015873015872vw;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 4.62962962962963vw 0 3.3068783068783065vw 1.984126984126984vw;
+  gap: 1.3227513227513228vw;
+}
+
+.line {
+  height: 23vw;
+  width: 0.13227513227513227vw;
+  background-color: #ffffff;
+  position: absolute;
+  top: 8vw;
+  left: 3.6375661375661372vw;
+  z-index: 1;
+}
+
+.left h3,
+.left h4 {
+  color: #ffffff;
+}
+
+.numberAndName {
+  display: flex;
+  align-items: center;
+  gap: 0.7936507936507936vw;
+  position: relative;
+  z-index: 2;
+  background: #082435;
+}
+
+.number {
+  width: 3.3068783068783065vw;
+  height: 3.3068783068783065vw;
+  border-radius: 3.3068783068783065vw;
+  border: 0.0992063492063492vw solid white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 48.148148148148145vw;
+  margin-top: 3.0423280423280423vw;
+}
+
+.right p {
+  margin-top: 0.7936507936507936vw;
+}
+
+.dropDown {
+  background: #ffffff;
+  border-radius: 0.7936507936507936vw;
+  height: 4.365079365079365vw;
+  border: 0.06613756613756613vw solid #dfdfdf;
+  width: 100%;
+  margin-top: 2.1164021164021163vw;
+  padding: 0 1.984126984126984vw;
+
+  font-size: 1.1904761904761905vw;
+
+  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 20 20"><polygon points="0,0 10,10 20,0" style="fill:#000;" /></svg>')
+    no-repeat right 10px center;
+  background-color: white;
+  background-size: 10px; */
+}
+
+.dropDown:focus {
+  border: 0.06613756613756613vw solid #dfdfdf;
+}
+
+.dropDown option {
+  color: #000;
+  border: 0.06613756613756613vw solid #dfdfdf;
+  padding: 1.1904761904761905vw 0;
+}
+
+.dropDown:invalid {
+  color: gray;
+  border: 0.06613756613756613vw solid #dfdfdf;
+}
+
+.btn {
+  margin-top: 2.1164021164021163vw;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

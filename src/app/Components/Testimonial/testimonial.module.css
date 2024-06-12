@@ -1,0 +1,113 @@
+.defualt {
+  --font-Poppins: "Poppins", sans-serif;
+  --verticalPadding: 0 9.920634920634921vw;
+  --containerPadding: 0 6.613756613756613vw;
+  --containerMarginTop: 9.25925925925926vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --borderRadius: 0.6613756613756614vw;
+  --mobileBorderRadius: 2.666666666666667vw;
+  --padding100: 6.613756613756613vw;
+  --margin15: 0.992063492063492vw;
+  --margin20: 1.3227513227513228vw;
+  --margin30: 1.984126984126984vw;
+  --margin70: 4.62962962962963vw;
+  --margin100: 6.613756613756613vw;
+  --gap70: 4.62962962962963vw;
+  --gap20: 1.3227513227513228vw;
+  --gap30: 1.984126984126984vw;
+  --gap40: 2.6455026455026456vw;
+  --gap50: 3.3068783068783065vw;
+  --mainbgColor: #12171c;
+  --bgColor: #0c1117;
+  --font18: 1.1904761904761905vw;
+  --font24: 1.5873015873015872vw;
+  --font28: 1.8518518518518516vw;
+  --lineHeight18: 1.6666666666666667vw;
+  --lineHeight24: 2.2222222222222223vw;
+  --lineHeight28: 2.169973544973545vw;
+  --letterSpace18: 0.023809523809523808vw;
+  --letterSpace24: 0.015873015873015872vw;
+  --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14: 3.733333333333334vw;
+  --mlineHeight14: 5.226666666666667vw;
+  --mletterSpace14: 0.4266666666666667vw;
+
+  --mfont18: 4.8vw;
+  --mlineHeight18: 5.624vw;
+  --mletterSpace18: 0.4266666666666667vw;
+}
+
+.container {
+  margin-top: var(--containerMarginTop);
+  padding-left: 9.920634920634921vw;
+  width: 100%;
+
+  display: -webkit-box;
+}
+
+.firstBox {
+  width: 24.6031746031746vw;
+  margin-right: 3.968253968253968vw;
+}
+
+.firstBox h2 {
+  margin-top: 1.0582010582010581vw;
+  margin-bottom: 2.1164021164021163vw;
+}
+
+.arrowContainer {
+  margin-top: 9.126984126984127vw;
+  width: max-content;
+}
+
+.cardsContainer {
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  width: max-content;
+  gap: 1.984126984126984vw;
+  overflow-x: scroll;
+}
+
+.cards::-webkit-scrollbar {
+  width: 0;
+}
+
+.card {
+  width: 25.396825396825395vw;
+  height: 28.174603174603174vw;
+  height: 100%;
+
+  padding: 3.3068783068783065vw 1.984126984126984vw 1.984126984126984vw
+    1.984126984126984vw;
+  background-color: #f5f5f5;
+  border-radius: 1.5873015873015872vw;
+}
+
+.info {
+  display: flex;
+  gap: 1.3227513227513228vw;
+  margin-top: 3.968253968253968vw;
+}
+
+.info img {
+  width: 3.3068783068783065vw;
+  height: 3.3068783068783065vw;
+}
+
+.nameAndDesignation p:nth-child(1) {
+  font-weight: 500;
+}

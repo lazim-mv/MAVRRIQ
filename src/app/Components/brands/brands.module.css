@@ -1,0 +1,52 @@
+.brands {
+  margin-top: 6.613756613756613vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.brandsHeading {
+  font-size: 1.5873015873015872vw;
+  font-weight: 500;
+  color: #c8952e;
+  margin-bottom: 2.6455026455026456vw;
+}
+
+.clientsImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.scrollingLogos {
+  display: flex;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  gap: 75px;
+}
+
+.logoClients {
+  height: 60px !important;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+  .brands {
+    overflow: hidden;
+    margin-top: 13.333333333333334vw;
+  }
+
+  .brandsHeading {
+    font-size: 4.8vw;
+  }
+
+  .scrolling-logos {
+    margin-top: 3.4666666666666663vw;
+    gap: 10.666666666666668vw;
+  }
+}
