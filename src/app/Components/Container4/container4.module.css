@@ -165,3 +165,73 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 4.266666666666667vw;
+    margin-top: 16vw;
+  }
+
+  .greyContainer {
+    width: 91.46666666666667vw;
+    height: 127.46666666666667vw;
+    background-color: #f5f5f5;
+    padding: 5.333333333333334vw 2.666666666666667vw 10.666666666666668vw
+      2.666666666666667vw;
+    margin-top: 4.62962962962963vw;
+    border-radius: 4.266666666666667vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .left {
+    padding-left: 4.266666666666667vw;
+    padding-right: 4.266666666666667vw;
+    width: 86.13333333333333vw;
+    height: 21.333333333333336vw;
+    flex-direction: row;
+    gap: 2.666666666666667vw;
+    border-radius: 4.266666666666667vw;
+    margin-bottom: 4.266666666666667vw;
+  }
+
+  .number {
+    width: 10.666666666666668vw;
+    height: 10.666666666666668vw;
+    border-radius: 10.666666666666668vw;
+  }
+
+  .line {
+    width: 0.26666666666666666vw;
+    height: 76.8vw;
+    background-color: #ffffff;
+    position: absolute;
+    top: -26.8vw;
+    left: 43vw;
+    z-index: 1;
+    transform: rotate(90deg);
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .right p {
+    margin-top: 2.1333333333333333vw;
+  }
+
+  .dropDown {
+    height: 14.399999999999999vw;
+    border-radius: 2.1333333333333333vw;
+
+    font-size: 3.733333333333334vw;
+    line-height: 5.866666666666666vw;
+    margin-top: 8vw;
+  }
+
+  .btn {
+    margin-top: 5.333333333333334vw;
+  }
+}

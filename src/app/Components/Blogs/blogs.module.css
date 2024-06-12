@@ -87,3 +87,9 @@
 .btnContainer {
   margin-top: 4.62962962962963vw;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+}

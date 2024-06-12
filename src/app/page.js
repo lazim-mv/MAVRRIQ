@@ -8,6 +8,7 @@ import Container6 from "./Components/Container6/Container6";
 import Container8 from "./Components/Faq/Faq";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import MobileHeader from "./Components/Header/MobileHeader";
 import Hero from "./Components/Hero/Hero";
 import Testimonial from "./Components/Testimonial/Testimonial";
 
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main>
       <Header />
+      {/* <MobileHeader /> */}
       <Hero />
       <Container2 />
       <Container3 />

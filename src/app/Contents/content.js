@@ -5,6 +5,7 @@ const hero = {
   SectionTitle: "Leading Business Setup Consultants in Dubai, UAE",
   btnText: "Our Services",
   img: "/hero/1.png",
+  mImg: "/hero/m1.png",
 };
 
 const container2 = {

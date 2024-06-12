@@ -68,3 +68,21 @@
   bottom: 5.291005291005291vw;
   left: 36.9vw;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 4.266666666666667vw;
+    margin-top: 16vw;
+  }
+
+  .btnAbsolute {
+    bottom: 13.291005vw;
+    left: 24.2vw;
+  }
+
+  .imgContainer {
+    width: 91.46666666666667vw;
+    height: 457.59999999999997vw;
+    position: relative;
+  }
+}

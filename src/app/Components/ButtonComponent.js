@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useWindowSize } from "../utils/windowSize";
 
 const BtnComponent = ({
@@ -19,8 +19,6 @@ const BtnComponent = ({
   customClassNameH5,
   marginTop,
 }) => {
-  useEffect(() => {});
-  const { windowSize, isSmallScreen } = useWindowSize();
   return (
     <div
       className="buttonBackgroundSVGContatiner"
@@ -78,6 +76,12 @@ const BtnComponent = ({
 };
 
 const SectionName = ({ sectionText, width, textAllign, margin }) => {
+  const [screenSize, setScreenSize] = useState();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenSize(window.innerWidth);
+    }
+  }, [screenSize]);
   return (
     <div
       style={{
@@ -85,17 +89,10 @@ const SectionName = ({ sectionText, width, textAllign, margin }) => {
         alignItems: "center",
         margin: margin && margin,
         marginBottom: "0.7936507936507936vw",
-        gap: "0.5291005291005291vw",
+        gap: screenSize < 768 ? "2.1333333333333333vw" : "0.5291005291005291vw",
       }}
     >
-      <div
-        style={{
-          background: "#010202",
-          width: "0.6613756613756614vw",
-          height: "0.6613756613756614vw",
-          borderRadius: "0.6613756613756614vw",
-        }}
-      ></div>
+      <div className="dot"></div>
       <h4
         style={{
           textAlign: textAllign,

@@ -74,3 +74,31 @@
   margin-top: 1.3227513227513228vw;
   margin-bottom: 2.1164021164021163vw;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: 8vw;
+    padding: var(--containerPadding);
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    width: 87.2vw;
+    height: 87.53866666666667vw;
+    margin-bottom: 8vw;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content h2 {
+    text-align: left;
+    margin-top: 2.1333333333333333vw;
+  }
+
+  .content p {
+    margin-top: calc(2.1333333333333333vw + 2.1333333333333333vw);
+    margin-bottom: calc(2.1333333333333333vw + 2.1333333333333333vw);
+  }
+}

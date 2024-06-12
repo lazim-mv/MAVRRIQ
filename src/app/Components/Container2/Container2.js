@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./container2.module.css";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import {
   SectionTitle,
 } from "../ButtonComponent";
 import Brands from "../brands/Brands";
+import { useWindowSize } from "@/app/utils/windowSize";
 
 const Container2 = () => {
   const imageSources = [
@@ -36,6 +38,8 @@ const Container2 = () => {
     ...imageSources,
   ]).flat();
 
+  const { windowSize, isSmallScreen } = useWindowSize();
+
   return (
     <>
       <div className={styles.container}>
@@ -56,7 +60,13 @@ const Container2 = () => {
             {container2.sectionName}
           </span>
           <h2 className={styles.spanAndH2}>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {isSmallScreen ? (
+              <></>
+            ) : (
+              <>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </>
+            )}
             {container2.SectionTitle}
           </h2>
           <div className={styles.descriptionContainer}>

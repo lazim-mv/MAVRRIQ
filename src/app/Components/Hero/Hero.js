@@ -1,10 +1,13 @@
+"use client"
 import React from "react";
 import styles from "./hero.module.css";
 import { BtnComponent, SectionName, SectionTitle } from "../ButtonComponent";
 import { hero } from "@/app/Contents/content";
 import Image from "next/image";
+import { useWindowSize } from "@/app/utils/windowSize";
 
 const Hero = () => {
+  const { windowSize, isSmallScreen } = useWindowSize();
   return (
     <div className={styles.heroContainer}>
       <div className={styles.left}>
@@ -18,7 +21,7 @@ const Hero = () => {
       </div>
       <div className={styles.right}>
         <Image
-          src={hero.img}
+          src={isSmallScreen ? hero.mImg: hero.img}
           alt="Asian Engineer"
           width={100}
           height={100}

@@ -111,3 +111,9 @@
 .nameAndDesignation p:nth-child(1) {
   font-weight: 500;
 }
+
+@media only screen and (max-width: 767px) {
+  .cards{
+    display: none;
+  }
+}

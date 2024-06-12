@@ -6,7 +6,7 @@ function useWindowSize() {
     height: undefined,
   });
 
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState();
 
   useLayoutEffect(() => {
     // Handler to call on window resize
@@ -18,8 +18,11 @@ function useWindowSize() {
         width: newWidth,
         height: newHeight,
       });
-
-      setIsSmallScreen(newWidth < 768);
+      if (newWidth < 768) {
+        setIsSmallScreen(true);
+      } else {
+        setIsSmallScreen(false);
+      }
     }
 
     window.addEventListener("resize", handleResize);
