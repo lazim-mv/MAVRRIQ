@@ -16,11 +16,16 @@ const Testimonial = () => {
   const cardData = testimonial.cardData;
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { windowSize, isSmallScreen } = useWindowSize();
+  const [screenSize, setScreenSize] = useState();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenSize(window.innerWidth);
+    }
+  }, [screenSize]);
 
   const totalData = testimonial.cardData.length;
-  const clicks = isSmallScreen ? totalData - 1 : totalData - 2;
-  const dynamicValue = isSmallScreen ? 70 : 27.380952381;
+  const clicks = screenSize > 768 ? totalData - 1 : totalData - 2;
+  const dynamicValue = screenSize > 768 ? 70 : 27.380952381;
 
   const nextImage = () => {
     if (currentIndex < clicks) {
@@ -46,13 +51,17 @@ const Testimonial = () => {
       <div className={styles.firstBox}>
         <SectionName sectionText={testimonial.sectionName} />
         <SectionTitle sectionText={testimonial.sectionTitle} />
-        <BtnComponent
-          buttonText={testimonial.btnText}
-          customClassName="container2ArrowWraper"
-        />
-        <div className={styles.arrowContainer}>
-          <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
-        </div>
+        {screenSize > 768 && (
+          <>
+            <BtnComponent
+              buttonText={testimonial.btnText}
+              customClassName="container2ArrowWraper"
+            />
+            <div className={styles.arrowContainer}>
+              <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
+            </div>
+          </>
+        )}
       </div>
       <div className={styles.cardsContainer}>
         <div className={styles.cards}>
@@ -62,7 +71,7 @@ const Testimonial = () => {
               style={{
                 transform: `translateX(-${currentIndex * dynamicValue}vw)`,
                 transition: `transform 3s ease, ${
-                  !isSmallScreen ? "width" : "height"
+                  screenSize > 768 ? "width" : "height"
                 } 3s ease`,
               }}
               key={index}
@@ -86,6 +95,13 @@ const Testimonial = () => {
             </div>
           ))}
         </div>
+        {screenSize < 768 && (
+          <>
+            <div className={styles.arrowContainer}>
+              <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

@@ -105,7 +105,7 @@
 }
 
 .firstCol p {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .secondCol {
@@ -121,10 +121,16 @@
   margin-bottom: 1.5873015873015872vw;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0582010582010581vw;
+}
+
 .secondCol a {
   position: relative;
   padding-bottom: 0.3306878306878307vw;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .secondCol a::before {
@@ -153,6 +159,13 @@
   width: 17.261904761904763vw;
 }
 
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0582010582010581vw;
+  width: 17.261904761904763vw;
+}
+
 .thirdCol p:nth-child(1) {
   color: #ffffff;
   font-weight: 500;
@@ -169,10 +182,11 @@
 .card img {
   width: 1.3227513227513228vw;
   height: 1.3227513227513228vw;
+  margin-top: 0.5vw;
 }
 
 .card h3 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.1904761904761905vw;
   font-weight: 400;
 }
@@ -209,7 +223,150 @@
 .copyRight {
   border-top: 0.06613756613756613vw solid rgba(255, 255, 255, 0.4);
   padding-top: 1.5873015873015872vw;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8);
   width: 100%;
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: 16vw;
+    padding: 0 2.1333333333333333vw;
+  }
+
+  .bgContainer {
+    position: relative;
+  }
+
+  .bgImage {
+    width: 95.73333333333333vw;
+    height: 235.2vw;
+  }
+
+  .titles {
+    position: absolute;
+    top: 0;
+    width: 82.5vw;
+    left: 6.5vw;
+    padding: 10.666666666666668vw 7.733333333333333vw 1.7195767195767195vw
+      7.733333333333333vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .titles h2 {
+    color: #ffffff;
+    width: 67.46666666666667vw;
+    margin-bottom: 4.266666666666667vw;
+  }
+
+  .absoluteContainer {
+    position: absolute;
+    top: 57.06666666666666vw;
+    padding: 0 8vw;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+  }
+
+  .firstCol {
+    width: 100%;
+  }
+
+  .logoContainer {
+    width: 35.46666666666667vw;
+    height: 8.533333333333333vw;
+    margin-bottom: 4.266666666666667vw;
+  }
+
+  .logoContainer img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .firstCol p {
+    color: #ffffff;
+  }
+
+  .secondCol {
+    width: 100%;
+  }
+
+  .secondCol p:nth-child(1) {
+    margin-bottom: 5.333333333333334vw;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 4.266666666666667vw;
+  }
+
+  .thirdCol {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .thirdCol p:nth-child(1) {
+    margin-bottom: 5.333333333333334vw;
+  }
+
+  .card {
+    display: flex;
+    gap: 3.2vw;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    gap: 4.266666666666667vw;
+    width: 100%;
+  }
+
+  .card img {
+    width: 5.333333333333334vw;
+    height: 5.333333333333334vw;
+  }
+
+  .card h3 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3.733333333333334vw;
+    font-weight: 400;
+    line-height: 5.866666666666666vw;
+    font-feature-settings: "liga" 0;
+  }
+
+  .fourthCol {
+    gap: 0;
+    width: 100%;
+  }
+
+  .fourthCol p:nth-child(1) {
+    margin-bottom: 5.333333333333334vw;
+  }
+
+  .socials {
+    gap: 4vw;
+  }
+
+  .socials img {
+    width: 10.666666666666668vw;
+    height: 10.666666666666668vw;
+  }
+
+  .copyRightContainer {
+    margin-top: 8.533333333333333vw;
+  }
+
+  .copyRight {
+    padding-top: 3.2vw;
+  }
 }

@@ -184,6 +184,12 @@
     gap: 2.666666666666667vw;
   }
 
+  .questionAnswerContainer {
+    width: 87.2vw;
+    padding: 4.266666666666667vw;
+    border-radius: 4.266666666666667vw;
+  }
+
   .questionContainer {
     width: 100%;
   }
@@ -197,8 +203,8 @@
   }
 
   .plusIcon {
-    width: 6.666666666666667vw;
-    height: 6.666666666666667vw;
+    width: 8vw;
+    height: 8vw;
     position: relative;
   }
 
@@ -209,10 +215,11 @@
   }
 
   .answerContainer p {
-    font-size: var(--mfont12);
-    line-height: var(--mlineHeight12);
-    letter-spacing: var(--mletterSpace12);
-    width: 87.2vw;
-    margin-top: 2.666666666666667vw;
+    font-size: 3.733333333333334vw;
+    font-weight: 400;
+    line-height: 5.866666666666666vw;
+    font-feature-settings: "liga" 0;
+    width: 76.53333333333333vw;
+    margin-top: 3.2vw;
   }
 }

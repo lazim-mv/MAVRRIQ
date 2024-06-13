@@ -1,10 +1,12 @@
-"use client"
+"use client";
 import React from "react";
 import styles from "./hero.module.css";
 import { BtnComponent, SectionName, SectionTitle } from "../ButtonComponent";
 import { hero } from "@/app/Contents/content";
 import Image from "next/image";
 import { useWindowSize } from "@/app/utils/windowSize";
+import heroImg from "../../../../public/hero/1.png";
+import mHeroImg from "../../../../public/hero/m1.png";
 
 const Hero = () => {
   const { windowSize, isSmallScreen } = useWindowSize();
@@ -20,14 +22,10 @@ const Hero = () => {
         />
       </div>
       <div className={styles.right}>
-        <Image
-          src={isSmallScreen ? hero.mImg: hero.img}
+        <img
+          src={isSmallScreen ? mHeroImg.src : heroImg.src}
           alt="Asian Engineer"
-          width={100}
-          height={100}
-          quality={100}
-          priority={true}
-          unoptimized
+          className={styles.heroImage}
         />
       </div>
     </div>

@@ -121,35 +121,34 @@ const container8Data = {
   faqData: [
     {
       number: "01",
-      question: "What is Loopify?",
+      question: "The UK’s abolition of the non-Dubai stands to benefit",
       answer:
-        "Loopify is an all-in-one platform designed to help subscription-based businesses like yours manage their online store, automate tasks, and build stronger customer relationships.",
+        "Businesses need qualified businesswin clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and blueprint and picture of how to establish.",
       isAnswerVisible: true,
     },
     {
       number: "01",
-      question: "Who is Loopify for?",
+      question: "The UK’s abolition of the non-Dubai stands to benefit",
       answer:
-        "Loopify caters to a wide range of businesses that operate on a subscription model. Whether you offer curated subscription boxes, stylish apparel and accessories, essential pet care supplies, delicious coffee and beverages, or creative arts and crafts kits, Loopify can empower your business to thrive.",
+        "Businesses need qualified businesswin clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and blueprint and picture of how to establish.",
     },
     {
       number: "01",
-      question: "What are the benefits of using Loopify?",
+      question: "The UK’s abolition of the non-Dubai stands to benefit",
       answer:
-        "Effortlessly manage your subscription business and elevate customer experiences with Loopify. Automate repetitive tasks like order fulfillment, billing, and communication, streamlining your operations for enhanced efficiency. Focus on growing your business and delivering exceptional customer service while Loopify fosters seamless customer journeys, fostering loyalty and trust. Gain valuable data-driven insights to optimize your subscription strategy and achieve sustainable growth.",
+        "Businesses need qualified businesswin clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and blueprint and picture of how to establish.",
     },
     {
       number: "01",
-      question:
-        "What makes Loopify different from other subscription management platforms?",
+      question: "The UK’s abolition of the non-Dubai stands to benefit",
       answer:
-        "While other subscription management platforms offer similar features, Loopify distinguishes itself with a user-friendly interface that simplifies operations for both you and your customers. Our focus on the customer experience ensures a seamless journey that fosters loyalty, while our scalable and flexible platform adapts to your growing business needs. Finally, Loopify empowers data-driven decision-making with comprehensive insights and analytics tools. We combine these features with excellent customer support and continuous product development to be your one-stop solution for subscription business success.",
+        "Businesses need qualified businesswin clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and blueprint and picture of how to establish.",
     },
     {
       number: "01",
-      question: "How much does Loopify cost?",
+      question: "The UK’s abolition of the non-Dubai stands to benefit",
       answer:
-        "Loopify offers a variety of pricing plans to fit different business needs and budgets. You can contact our sales team for a personalized quote.",
+        "Businesses need qualified businesswin clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and blueprint and picture of how to establish.",
     },
   ],
 };
@@ -176,6 +175,7 @@ const contact = {
 
 const footer = {
   bg: "/footer/bg.png",
+  mBg: "/footer/mbg.png",
   sectionTitle: "Let’s discuss and bring your vision to life.",
   btnText: "Contact Us",
   logo: "/footer/logo.svg",

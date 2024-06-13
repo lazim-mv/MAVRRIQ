@@ -168,6 +168,10 @@
     order: 2;
   }
 
+  .content p {
+    margin: 4.266666666666667vw 0;
+  }
+
   .content h2 {
     text-align: left;
   }

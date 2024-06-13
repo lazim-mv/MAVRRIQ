@@ -113,7 +113,49 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .cards{
-    display: none;
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16vw;
+    padding: 0 6.4vw;
+  }
+
+  .firstBox {
+    width: 70.93333333333334vw;
+  }
+
+  .firstBox h4 {
+    margin: 0;
+  }
+
+  .firstBox h2 {
+    text-align: left;
+    margin-top: 2.1333333333333333vw;
+    margin-bottom: 8vw;
+  }
+
+  .cards {
+    display: flex;
+    gap: 5.333333333333334vw;
+  }
+
+  .card {
+    width: 66.66666666666666vw;
+    height: 91.73333333333333vw;
+    padding: 5.333333333333334vw 4.266666666666667vw 8vw 4.266666666666667vw;
+    border-radius: 4.266666666666667vw;
+  }
+
+  .info {
+    margin-top: 8.533333333333333vw;
+  }
+
+  .info img {
+    width: 10.666666666666668vw;
+    height: 10.666666666666668vw;
+  }
+
+  .arrowContainer {
+    margin: 8vw auto 0 auto;
   }
 }

@@ -10,6 +10,7 @@ import {
 } from "../ButtonComponent";
 import Brands from "../brands/Brands";
 import { useWindowSize } from "@/app/utils/windowSize";
+import coverImage from "../../../../public/container2/1.png";
 
 const Container2 = () => {
   const imageSources = [
@@ -44,14 +45,10 @@ const Container2 = () => {
     <>
       <div className={styles.container}>
         <div className={styles.imgContainer}>
-          <Image
-            src={container2.img}
+          <img
+            src={coverImage.src}
             alt="Asian Engineer"
-            width={100}
-            height={100}
-            quality={100}
-            priority={true}
-            unoptimized
+            className={styles.heroImage}
           />
         </div>
         <div className={styles.contentContainer}>

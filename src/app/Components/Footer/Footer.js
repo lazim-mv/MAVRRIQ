@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "./footer.module.css";
 import { footer, socialIcons } from "@/app/Contents/content";
 import Image from "next/image";
@@ -9,11 +10,17 @@ import {
 } from "../ButtonComponent";
 
 const Footer = () => {
+  const [screenSize, setScreenSize] = useState();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenSize(window.innerWidth);
+    }
+  }, [screenSize]);
   return (
     <div className={styles.container}>
       <div className={styles.bgContainer}>
         <Image
-          src={footer.bg}
+          src={screenSize < 768 ? footer.mBg : footer.bg}
           alt="Asian Engineer"
           width={100}
           height={100}
@@ -47,21 +54,24 @@ const Footer = () => {
             </div>
             <div className={styles.secondCol}>
               <SectionDescription sectionText="Quick Links" />
-              <div>
-                <a href="/pages/About">About</a>
-              </div>
-              <div>
-                <a href="/pages/Programs">Services</a>
-              </div>
-              <div>
-                <a href="/pages/E3Global">Blogs</a>
-              </div>
-              <div>
-                <a href="/pages/E3Global">Contact Us</a>
+              <div className={styles.links}>
+                <div>
+                  <a href="/pages/About">About</a>
+                </div>
+                <div>
+                  <a href="/pages/Programs">Services</a>
+                </div>
+                <div>
+                  <a href="/pages/E3Global">Blogs</a>
+                </div>
+                <div>
+                  <a href="/pages/E3Global">Contact Us</a>
+                </div>
               </div>
             </div>
             <div className={styles.thirdCol}>
               <SectionDescription sectionText="Get In Touch" />
+              <div className={styles.address}>
               {footer.getInTouch.map((data, index) => (
                 <div className={styles.card} key={index}>
                   <Image
@@ -76,6 +86,7 @@ const Footer = () => {
                   <h3>{data.text}</h3>
                 </div>
               ))}
+              </div>
             </div>
             <div className={styles.fourthCol}>
               <SectionDescription sectionText="Social Media" />
