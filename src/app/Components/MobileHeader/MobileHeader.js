@@ -2,15 +2,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
+import styles from "./mobileHeader.module.css";
 import { BtnComponent } from "../ButtonComponent";
+import { useLenis } from "@studio-freight/react-lenis";
+import logo from "../../../../public/logo.svg";
 
 function MobileHeader() {
   const pathname = usePathname();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  console.log(pathname, "jkfsdfjdks");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -22,15 +23,21 @@ function MobileHeader() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "About", href: "/pages/About" },
-    { text: "Programs", href: "/pages/Programs" },
-    { text: "E3 Global Zone", href: "/pages/E3Global" },
+    { text: "About Us", href: "/pages/About/" },
+    { text: "Services", href: "/pages/Services/" },
+    { text: "Blog", href: "/pages/HeaderBlog/" },
+    { text: "Contact Us", href: "/pages/Contact/" },
   ];
+
+  const lenis = useLenis(({ scroll }) => {
+    setIsMenuOpen(false);
+  });
 
   return (
     <div
+      className={styles.mHeader}
       style={{
-        backgroundColor: "#0D0D0D",
+        backgroundColor: "#ffffff",
         height: "21.333333333333336vw",
         position: "fixed",
         top: 0,
@@ -38,9 +45,9 @@ function MobileHeader() {
         right: 0,
         zIndex: 100,
       }}
-      className="mHeader"
     >
       <div
+        className={`mHeaderContainer ${styles.mHeaderContainer}`}
         style={{
           width: "100%",
           margin: 0,
@@ -48,40 +55,35 @@ function MobileHeader() {
           justifyContent: "space-between",
           alignItems: "center",
           height: "100%",
+          borderBottom: "0.26666666666666666vw solid rgba(255,255,255,0.6)",
         }}
-        className="mHeaderContainer"
       >
         <a href="/">
-          <div>
-            <Image
-              src="/logo.svg"
-              width={120}
-              height={30}
-              alt="ImageHeader"
-              style={{
-                width: "34vw",
-                height: "4vw",
-              }}
-            />
+          <div className={styles.imgContainer}>
+            <h3 className={styles.logo}>
+              <img src={logo.src} alt="ImageHeader" />
+            </h3>
           </div>
         </a>
-        <button
+        <div
           aria-label="HamburgerMenu"
           onClick={toggleMenu}
-          className={`hamburger-button ${isMenuOpen ? "open" : ""}`}
+          className={`${styles.bars} ${isMenuOpen ? styles.open : ""}`}
           style={{ position: "relative", display: "flex", border: "none" }}
         >
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </button>
+          <span className={`bar ${styles.bar}`}></span>
+          <span className={`bar ${styles.bar}`}></span>
+          <span className={`bar ${styles.bar}`}></span>
+        </div>
         <div
+          className={styles.openMenu}
           style={{
             position: "fixed",
             top: "21.333333333333336vw",
             right: 0,
             width: "100vw",
             height: isMenuOpen ? "auto" : "0vh",
-            backgroundColor: "#0D0D0D",
+            backgroundColor: "#12171c",
             zIndex: 52,
             display: "flex",
             flexDirection: "column",
@@ -93,7 +95,7 @@ function MobileHeader() {
           }}
         >
           <div
-            className="hMenu"
+            className={`hMenu ${styles.hMenu}`}
             style={{
               height: isMenuOpen ? "auto" : 0,
               transform: isMenuOpen ? "translateY(0)" : "translateY(-4.8vw)",
@@ -110,26 +112,26 @@ function MobileHeader() {
                   pathname === item.href
                     ? "active"
                     : ""
-                }`}
+                } ${styles.linksWrapper} ${styles.linksText}`}
                 href={item.href}
                 style={{
                   transform: isMenuOpen
                     ? "translateY(0)"
                     : "translateY(-100vw)",
                 }}
+                onClick={() => lenis.scrollTo(`${item.href}`, { lerp: 0.05 })}
               >
                 {item.text}
               </a>
             ))}
-            <a
-              href="/pages/Contact"
-              style={{ display: isMenuOpen ? "block" : "none" }}
-            >
+
+            <a href="/" style={{ display: isMenuOpen ? "block" : "none" }}>
               <BtnComponent
-                bg="#C8952E"
+                buttonText="Get in Touch"
+                header={true}
+                bg="#A0153E"
+                arrow={true}
                 color="#ffffff"
-                width="11.45833333333333vw"
-                buttonText="Contact Now"
               />
             </a>
           </div>

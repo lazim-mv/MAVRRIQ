@@ -47,74 +47,93 @@
   --mletterSpace18: 0.4266666666666667vw;
 }
 
-.heroContainer {
-  margin-top: 3.968253968253968vw;
+.firstContainer {
   padding: var(--verticalPadding);
+  margin-top: 5.291005291005291vw;
+}
+
+.titles {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.left {
-  width: 36.24338624338625vw;
+.imgContainer img {
+  margin-top: var(--margin70);
+  width: 80.15873015873017vw;
+  height: 33.06878306878307vw;
 }
 
-.left h1 {
-  font-size: 3.571428571428571vw;
-  font-weight: 500;
-  line-height: 4.1005291005291005vw;
+.container3 {
+  margin-top: var(--containerMarginTop);
+  padding: var(--verticalPadding);
+  display: flex;
+  justify-content: space-between;
 }
 
-.right {
+.imgContainer3 {
   width: 38.095238095238095vw;
   height: 38.35978835978836vw;
 }
 
-.right img {
+.imgContainer3 img {
   width: 100%;
   height: 100%;
 }
 
-.imgContainer1 {
-  padding: var(--containerPadding);
-  margin-top: 9.25925925925926vw;
+.content3 {
+  width: 36.24338624338625vw;
+  padding-top: 2.6455026455026456vw;
+  padding-bottom: 3.571428571428571vw;
 }
 
-.imgContainer1 img {
-  width: 100%;
-  height: 100%;
+.content3 p {
+  margin-top: 1.3227513227513228vw;
+  margin-bottom: 2.1164021164021163vw;
 }
 
 @media only screen and (max-width: 767px) {
-  .heroContainer {
-    flex-direction: column;
+  .firstContainer {
     padding: var(--mobileContainerPadding);
     margin-top: calc(21.333333333333336vw + 10.666666666666668vw);
   }
 
-  .left {
-    width: 100%;
-    margin-bottom: 8vw;
-  }
-
-  .left h1 {
-    font-size: 8.533333333333333vw;
-    line-height: 10.666666666666668vw;
+  .titles h2 {
     margin-top: 2.1333333333333333vw;
-    margin-bottom: calc(2.1333333333333333vw + 2.1333333333333333vw);
   }
 
-  .right {
-    width: 100%;
-    height: 87.46666666666667vw;
-  }
-
-  .right img {
+  .imgContainer img {
+    margin-top: 8vw;
     width: 87.2vw;
-    height: 87.46666666666667vw;
+    height: 93.33333333333333vw;
   }
 
-  .imgContainer1 img {
-    display: none;
+  .container3 {
+    margin-top: 8vw;
+    padding: var(--containerPadding);
+    flex-direction: column;
+  }
+
+  .imgContainer3 {
+    width: 87.2vw;
+    height: 87.53866666666667vw;
+    margin-bottom: 0vw;
+    order: 2;
+  }
+
+  .content3 {
+    width: 100%;
+    order: 1;
+  }
+
+  .content3 h2 {
+    text-align: left;
+    margin-top: 2.1333333333333333vw;
+  }
+
+  .content3 p {
+    margin-top: calc(2.1333333333333333vw + 2.1333333333333333vw);
+    margin-bottom: calc(2.1333333333333333vw + 2.1333333333333333vw);
   }
 }

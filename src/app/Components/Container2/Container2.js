@@ -10,7 +10,6 @@ import {
 } from "../ButtonComponent";
 import Brands from "../brands/Brands";
 import { useWindowSize } from "@/app/utils/windowSize";
-import coverImage from "../../../../public/container2/1.png";
 
 const Container2 = () => {
   const imageSources = [
@@ -44,13 +43,6 @@ const Container2 = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.imgContainer}>
-          <img
-            src={coverImage.src}
-            alt="Asian Engineer"
-            className={styles.heroImage}
-          />
-        </div>
         <div className={styles.contentContainer}>
           <span className={styles.spanSectionName}>
             <span className={styles.spanDot}></span>
@@ -77,14 +69,14 @@ const Container2 = () => {
           </div>
         </div>
       </div>
-      <div className={styles.clientsImgContainer}>
+      {/* <div className={styles.clientsImgContainer}>
         <Brands
           imageSources={repeatedImageSources}
           initialAnimateValue="-160%"
           hoverDuration="600"
           duration="650"
         />
-      </div>
+      </div> */}
     </>
   );
 };

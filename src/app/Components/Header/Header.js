@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import styles from "./header.module.css";
 import { BtnComponent } from "../ButtonComponent";
+import Link from "next/link";
 
 function Header() {
   const pathname = usePathname();
@@ -40,7 +41,7 @@ function Header() {
                   key={index}
                   className={`${styles.huListTransitionWrapper} `}
                 >
-                  <a
+                  <Link
                     href={item.href}
                     className={`${
                       pathname !== undefined &&
@@ -52,7 +53,7 @@ function Header() {
                     }`}
                   >
                     <div>{item.text}</div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

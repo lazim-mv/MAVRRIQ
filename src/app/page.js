@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import Blogs from "./Components/Blogs/Blogs";
 import Contact from "./Components/Contact/Contact";
 import Container2 from "./Components/Container2/Container2";
@@ -8,26 +10,34 @@ import Container6 from "./Components/Container6/Container6";
 import Container8 from "./Components/Faq/Faq";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
-import MobileHeader from "./Components/Header/MobileHeader";
 import Hero from "./Components/Hero/Hero";
+import MobileHeader from "./Components/MobileHeader/MobileHeader";
 import Testimonial from "./Components/Testimonial/Testimonial";
 
 export default function Home() {
-  return (
-    <main>
-      <Header />
-      {/* <MobileHeader /> */}
-      <Hero />
-      <Container2 />
-      <Container3 />
-      <Container4 />
-      <Container5 />
-      <Container6 />
-      <Testimonial />
-      <Blogs />
-      <Container8 />
-      <Contact />
-      <Footer />
-    </main>
-  );
+  const [screenSize, setScreenSize] = useState(null);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenSize(window.innerWidth);
+    }
+  }, [screenSize]);
+  if (screenSize !== null) {
+    return (
+      <main>
+        <Header />
+        <MobileHeader />
+        <Hero />
+        <Container2 />
+        <Container3 />
+        <Container4 />
+        <Container5 />
+        <Container6 />
+        <Testimonial />
+        <Blogs />
+        <Container8 />
+        <Contact />
+        <Footer />
+      </main>
+    );
+  }
 }

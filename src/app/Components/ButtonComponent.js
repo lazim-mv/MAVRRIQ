@@ -75,7 +75,7 @@ const BtnComponent = ({
   );
 };
 
-const SectionName = ({ sectionText, width, textAllign, margin }) => {
+const SectionName = ({ sectionText, width, textAllign, margin, dotColor }) => {
   const [screenSize, setScreenSize] = useState();
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -92,7 +92,10 @@ const SectionName = ({ sectionText, width, textAllign, margin }) => {
         gap: screenSize < 768 ? "2.1333333333333333vw" : "0.5291005291005291vw",
       }}
     >
-      <div className="dot"></div>
+      <div
+        style={{ background: dotColor ? dotColor : "#010202" }}
+        className="dot"
+      ></div>
       <h4
         style={{
           textAlign: textAllign,

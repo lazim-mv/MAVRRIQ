@@ -1,0 +1,216 @@
+.defualt {
+  --font-Poppins: "Poppins", sans-serif;
+  --verticalPadding: 0 9.920634920634921vw;
+  --containerPadding: 0 6.613756613756613vw;
+  --containerMarginTop: 9.920634920634921vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --borderRadius: 0.6613756613756614vw;
+  --mobileBorderRadius: 2.666666666666667vw;
+  --padding100: 6.613756613756613vw;
+  --margin15: 0.992063492063492vw;
+  --margin20: 1.3227513227513228vw;
+  --margin30: 1.984126984126984vw;
+  --margin70: 4.62962962962963vw;
+  --margin100: 6.613756613756613vw;
+  --gap70: 4.62962962962963vw;
+  --gap20: 1.3227513227513228vw;
+  --gap30: 1.984126984126984vw;
+  --gap40: 2.6455026455026456vw;
+  --gap50: 3.3068783068783065vw;
+  --mainbgColor: #12171c;
+  --bgColor: #0c1117;
+  --font18: 1.1904761904761905vw;
+  --font24: 1.5873015873015872vw;
+  --font28: 1.8518518518518516vw;
+  --lineHeight18: 1.6666666666666667vw;
+  --lineHeight24: 2.2222222222222223vw;
+  --lineHeight28: 2.169973544973545vw;
+  --letterSpace18: 0.023809523809523808vw;
+  --letterSpace24: 0.015873015873015872vw;
+  --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14: 3.733333333333334vw;
+  --mlineHeight14: 5.226666666666667vw;
+  --mletterSpace14: 0.4266666666666667vw;
+
+  --mfont18: 4.8vw;
+  --mlineHeight18: 5.624vw;
+  --mletterSpace18: 0.4266666666666667vw;
+}
+.container {
+  padding-left: 9.920634920634921vw;
+  margin: var(--containerMarginTop) 0;
+  height: 200vh;
+  background-color: #082435;
+  border-radius: 1.5873015873015872vw;
+}
+
+.topHeadingContainer {
+  padding-right: 6.613756613756613vw;
+  margin-top: 7.936507936507936vw;
+}
+
+.stickyContainer {
+  position: sticky;
+  top: -2vw;
+  overflow: hidden;
+}
+
+.tittle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--font24);
+  width: 36.24338624338625vw;
+}
+
+.tittle h2 {
+  color: #ffffff;
+}
+
+.topHeadingContainer h4 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: var(--gap50);
+  margin-top: var(--margin70);
+  width: 400%;
+  /* height: 100vh; */
+  /* visibility: hidden; */
+
+  height: auto;
+  padding: 3.968253968253968vw;
+  border: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
+  border-radius: 1.5873015873015872vw;
+  margin-bottom: 7.936507936507936vw;
+}
+
+.card {
+  width: 21.825396825396826vw;
+  cursor: pointer;
+}
+
+.container5Img {
+  width: 3.968253968253968vw;
+  height: 3.968253968253968vw;
+  margin-bottom: var(--margin20);
+  position: relative;
+  overflow: hidden;
+}
+
+.container5Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* scale: 1; */
+  /* transform: translateY(0%); */
+  transition: all 0.4s ease-out;
+}
+
+.card:hover .container5Img img {
+  /* scale: 1.08; */
+  /* transform: translateY(-5%); */
+  object-position: bottom;
+  transition: all 0.4s ease-in;
+}
+
+.cardHeadingAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardHeadingAndButton h6 {
+  font-size: var(--font28);
+  line-height: var(--lineHeight28);
+  letter-spacing: var(--letterSpace24pervent2);
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0.7936507936507936vw;
+}
+
+.cardHeadingAndButton p {
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: var(--mobileContainerPadding);
+    margin: var(--mobileContainerMarginTop) 0;
+    height: auto;
+    border-radius: 6.4vw;
+  }
+
+  .topHeadingContainer {
+    margin-top: 13.333333333333334vw;
+  }
+
+  .tittle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    width: 76.53333333333333vw;
+    margin-top: 2.1333333333333333vw;
+  }
+
+  .tittle h2 {
+    text-align: left;
+  }
+
+  .stickyContainer {
+    position: relative;
+    top: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column !important;
+    gap: 8vw;
+    margin-top: 8vw;
+    height: auto;
+    width: 87.2vw;
+    border-radius: calc(2.1333333333333333vw + 2.1333333333333333vw);
+    padding: 8vw 5.333333333333334vw;
+  }
+
+  .card {
+    width: auto;
+    cursor: pointer;
+  }
+
+  .container5Img {
+    width: 13.333333333333334vw;
+    height: 13.333333333333334vw;
+    margin-bottom: 6.4vw;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container5Img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardHeadingAndButton h6 {
+    font-size: var(--mfont18);
+    line-height: var(--mlineHeight18);
+    letter-spacing: var(--mletterSpace18);
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 2.1333333333333333vw;
+  }
+}
