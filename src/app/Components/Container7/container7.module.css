@@ -182,3 +182,143 @@
   width: 100%;
   height: 100%;
 }
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: 16vw;
+    padding: 0 6.4vw;
+  }
+
+  .tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tittle h2 {
+    width: 60vw;
+    text-align: center;
+    margin-top: 1.5vw;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vw;
+    gap: 4.266666666666667vw;
+  }
+
+  .card {
+    padding: 4.266666666666667vw;
+    background: #f5f5f5;
+    border-radius: 4.266666666666667vw;
+
+    display: flex;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+
+  .left {
+    width: auto;
+  }
+
+  .left h6 {
+    width: 26.13333333333333vw;
+    height: 9.066666666666666vw;
+    border-radius: 26.666666666666668vw;
+
+    font-size: 3.733333333333334vw;
+    font-weight: 400;
+    line-height: 5.866666666666666vw;
+    font-feature-settings: "liga" 0;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  .headingText {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .headingText h3 {
+    order: 1;
+    margin-top: 4.8vw;
+    margin-left: -25vw;
+    width: 78.66666666666666vw;
+  }
+
+  .headingText p {
+    margin-left: 5vw;
+    margin-top: 2vw;
+  }
+
+  .expanded {
+    margin-left: -25vw;
+  }
+
+  .desc1 {
+    margin-top:3.2vw;
+  }
+
+  .desc2 {
+    margin-top: 2.1333333333333333vw;
+  }
+
+  .points {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bulletPointWrap {
+    display: flex;
+  }
+
+  .bulletPoint {
+    background: #010202;
+    width: 0.6613756613756614vw;
+    height: 0.6613756613756614vw;
+    border-radius: 0.6613756613756614vw;
+  }
+
+  .points {
+    gap: 1.0666666666666667vw;
+    margin-top: 2.1333333333333333vw;
+  }
+
+  .points li {
+    font-size: 3.733333333333334vw;
+    font-weight: 400;
+    line-height: 5.866666666666666vw;
+    font-feature-settings: "liga" 0;
+    padding-left: 1.5vw;
+  }
+
+  .point::marker {
+    font-size: 1em;
+    margin-left: -100px !important;
+  }
+
+  .plusIcon {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 8vw;
+    margin-right: 1.0582010582010581vw;
+    position: relative;
+    cursor: pointer;
+    background-color: #e9f3ff;
+    position: absolute;
+    right: 2vw;
+  }
+
+  .plusIcon img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
