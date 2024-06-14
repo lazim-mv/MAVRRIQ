@@ -24,8 +24,8 @@ function MobileHeader() {
   const menuList = [
     { text: "Home", href: "/" },
     { text: "About Us", href: "/pages/About/" },
-    { text: "Services", href: "/pages/Services/" },
-    { text: "Blog", href: "/pages/HeaderBlog/" },
+    { text: "Careers", href: "/pages/Careers/" },
+    { text: "Blogs", href: "/pages/Blogs/" },
     { text: "Contact Us", href: "/pages/Contact/" },
   ];
 
