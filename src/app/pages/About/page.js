@@ -19,7 +19,7 @@ import Contact from "@/app/Components/Contact/Contact";
 import Footer from "@/app/Components/Footer/Footer";
 import Horizontal from "@/app/Components/HorizontalScroll/Horizontal";
 
-const page = () => {
+const Page = () => {
   const [screenSize, setScreenSize] = useState(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -77,4 +77,4 @@ const page = () => {
   }
 };
 
-export default page;
+export default Page;
