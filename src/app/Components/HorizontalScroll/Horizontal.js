@@ -43,14 +43,13 @@ const Horizontal = () => {
           let sections = gsap.utils.toArray(`.${styles.card}`);
           console.log(sections, "sssssssssection");
           gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1.8),
+            xPercent: -70 * (sections.length - 1.8),
             ease: "none",
             scrollTrigger: {
               trigger: `.${styles.card}`,
               start: "bottom 80%",
               end: "bottom top",
               scrub: 1,
-              markers: true,
             },
           });
 

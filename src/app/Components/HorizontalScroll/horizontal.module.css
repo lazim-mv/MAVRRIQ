@@ -82,12 +82,9 @@
 
 .cards {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: var(--gap50);
   margin-top: var(--margin70);
   width: 400%;
-  /* height: 100vh; */
-  /* visibility: hidden; */
 
   height: auto;
   padding: 3.968253968253968vw;

@@ -115,6 +115,67 @@ const blogs = {
   ],
 };
 
+const container7 = {
+  sectionName: "Open Positions",
+  sectionTitle: "Our Current Open Positions",
+  cardData: [
+    {
+      jobTime: "Part Time",
+      cardHeading: "Business Development Manager",
+      desc1: "Exp. 1 to 3 years",
+      desc2: "Key Responsibilities (What you will be doing?)",
+      location: "Doaha",
+      points: [
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+      ],
+    },
+    {
+      jobTime: "Part Time",
+      cardHeading: "Business Development Manager",
+      desc1: "Exp. 1 to 3 years",
+      desc2: "Key Responsibilities (What you will be doing?)",
+      location: "Doaha",
+      points: [
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+      ],
+    },
+    {
+      jobTime: "Part Time",
+      cardHeading: "Business Development Manager",
+      desc1: "Exp. 1 to 3 years",
+      desc2: "Key Responsibilities (What you will be doing?)",
+      location: "Doaha",
+      points: [
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+        "Familiarizing yourself with all products and services offered by our company",
+      ],
+    },
+  ],
+};
+
 const container8Data = {
   sectionName: "Anything else?",
   sectionTitle: "The answers to your questions.",
@@ -231,6 +292,7 @@ export {
   container4,
   container5,
   container6,
+  container7,
   testimonial,
   blogs,
   container8Data,

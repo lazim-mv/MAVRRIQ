@@ -101,7 +101,7 @@ const SectionName = ({ sectionText, width, textAllign, margin, dotColor }) => {
           textAlign: textAllign,
           textTransform: "uppercase",
           width: width,
-          borderBottom: "0.06613756613756613vw solid rgba(255, 255, 255, 0.6)",
+          // borderBottom: "0.06613756613756613vw solid rgba(255, 255, 255, 0.6)",
         }}
       >
         {sectionText}
