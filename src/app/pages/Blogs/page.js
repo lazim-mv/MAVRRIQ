@@ -14,7 +14,7 @@ import Image from "next/image";
 import Contact from "@/app/Components/Contact/Contact";
 import Footer from "@/app/Components/Footer/Footer";
 
-const page = () => {
+const Page = () => {
   const [screenSize, setScreenSize] = useState();
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -33,7 +33,7 @@ const page = () => {
           </div>
           <div className={styles.cards}>
             {firstContainer.cardData.map((data, index) => (
-              <div className={styles.card}>
+              <div className={styles.card} key={index}>
                 <div className={styles.imgContainer}>
                   <img src={data.img} alt="Asian Engineer" />
                   <div className={styles.arrowImg}>
@@ -67,4 +67,4 @@ const page = () => {
   }
 };
 
-export default page;
+export default Page;

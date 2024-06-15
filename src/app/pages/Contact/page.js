@@ -25,7 +25,7 @@ const page = () => {
         </div>
         <div className={styles.cards}>
           {firstContainer.cardData.map((data, index) => (
-            <div className={styles.card}>
+            <div className={styles.card} key={index}>
               <div className={styles.imgContainer}>
                 <Image
                   src={data.img}
