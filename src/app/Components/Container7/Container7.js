@@ -1,7 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./container7.module.css";
-import { CardHeading, SectionName, SectionTitle } from "../ButtonComponent";
+import {
+  BtnComponent,
+  CardHeading,
+  SectionName,
+  SectionTitle,
+} from "../ButtonComponent";
 import { container7 } from "@/app/Contents/content";
 import Image from "next/image";
 
@@ -58,6 +63,12 @@ const Container7 = () => {
                           <li className={styles.point}>{point}</li>
                         </div>
                       ))}
+                      <div className={styles.careerBtn}>
+                        <BtnComponent
+                          buttonText="Apply Now"
+                          customClassName="container2ArrowWraper"
+                        />
+                      </div>
                     </div>
                   </>
                 )}

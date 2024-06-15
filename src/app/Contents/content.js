@@ -3,6 +3,7 @@ const { SectionTitle } = require("../Components/ButtonComponent");
 const hero = {
   sectionName: "Your Global Advisory",
   SectionTitle: "Leading Business Setup Consultants in Dubai, UAE",
+  desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute.",
   btnText: "Our Services",
   img: "/hero/1.png",
   mImg: "/hero/m1.png",
@@ -215,7 +216,7 @@ const container8Data = {
 };
 
 const contact = {
-  sectionName: "Gt in Touch",
+  sectionName: "Get in Touch",
   sectionTitle: "Don't Miss Out, Connect with Our Experts!",
   btnText: "Submit Message",
   cardData: [

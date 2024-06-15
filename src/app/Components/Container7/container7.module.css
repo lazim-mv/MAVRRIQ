@@ -183,6 +183,10 @@
   height: 100%;
 }
 
+.careerBtn {
+  margin-top: 2.2486772486772484vw;
+}
+
 @media only screen and (max-width: 767px) {
   .container {
     margin-top: 16vw;
@@ -263,7 +267,7 @@
   }
 
   .desc1 {
-    margin-top:3.2vw;
+    margin-top: 3.2vw;
   }
 
   .desc2 {
@@ -320,5 +324,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+
+  .careerBtn {
+    margin-top: 4.266666666666667vw;
   }
 }
