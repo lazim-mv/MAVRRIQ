@@ -25,11 +25,13 @@ const Hero = () => {
             Leading Business Setup <span>Consultants</span> in Dubai, UAE
           </h1>
           <SectionDescription sectionText={hero.desc} />
-          <BtnComponent
-            buttonText={hero.btnText}
-            marginTop="2.1164021164021163vw"
-            customClassName="container2ArrowWraper"
-          />
+          <div className={styles.heroBtn}>
+            <BtnComponent
+              buttonText={hero.btnText}
+              marginTop="2.1164021164021163vw"
+              customClassName="container2ArrowWraper"
+            />
+          </div>
         </div>
 
         {/* <div className={styles.right}>
@@ -42,7 +44,7 @@ const Hero = () => {
       </div>
       <div className={styles.imgContainer1}>
         <img
-          src={coverImage.src}
+          src={isSmallScreen ? mHeroImg.src : coverImage.src}
           alt="Asian Engineer"
           className={styles.heroImage}
         />
