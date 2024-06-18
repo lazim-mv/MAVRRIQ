@@ -3,7 +3,7 @@
 }
 
 .active {
-  color: #3763EB !important;
+  color: #3763eb !important;
 }
 
 .hContainer {
@@ -43,7 +43,7 @@
 }
 
 .hUlList a:hover {
-  color: #3763EB;
+  color: #3763eb;
 }
 
 .hUlList li {
@@ -57,6 +57,7 @@
   height: 90%;
   overflow: hidden;
   position: relative;
+  color: black;
 }
 
 .listHoverTop,
@@ -83,6 +84,59 @@
 
 .huListTransitionWrapper:hover .listHoverBottom {
   transform: translate(0%, 0%);
+}
+
+.dropdownMenu {
+  position: absolute;
+  left: 22vw;
+  top: 5.5vw;
+  width: 54.89417989417989vw;
+  height: 17.46031746031746vw;
+  background-color: #ffffff;
+  border-radius: 1.0582010582010581vw;
+  list-style: none;
+
+  display: flex;
+  gap: 1.3888888888888888vw;
+  padding: 1.3227513227513228vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.0582010582010581vw;
+}
+
+.imgContainer {
+  height: 11.904761904761903vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .icon {
+  display: block;
+}
+
+.icon {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4.1005291005291005vw;
+  height: 4.166666666666666vw;
+}
+
+.headerImg {
+  width: 16.534391534391535vw;
+  height: 11.904761904761903vw;
+  border-radius: 1.0582010582010581vw;
+}
+
+.dropDownArrow {
+  margin-left: 0.6613756613756614vw;
+  margin-bottom: 0.1vw;
 }
 
 @media only screen and (max-width: 767px) {

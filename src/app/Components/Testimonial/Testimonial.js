@@ -24,8 +24,8 @@ const Testimonial = () => {
   }, [screenSize]);
 
   const totalData = testimonial.cardData.length;
-  const clicks = screenSize > 768 ? totalData - 1 : totalData - 2;
-  const dynamicValue = screenSize > 768 ? 70 : 27.380952381;
+  const clicks = screenSize < 768 ? totalData - 1 : totalData - 2;
+  const dynamicValue = screenSize < 768 ? 70 : 27.380952381;
 
   const nextImage = () => {
     if (currentIndex < clicks) {
@@ -70,7 +70,7 @@ const Testimonial = () => {
               className={styles.card}
               style={{
                 transform: `translateX(-${currentIndex * dynamicValue}vw)`,
-                transition: `transform 3s ease, ${
+                transition: `transform 1.5s ease, ${
                   screenSize > 768 ? "width" : "height"
                 } 3s ease`,
               }}

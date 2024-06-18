@@ -1,0 +1,179 @@
+.defualt {
+  --font-Poppins: "Poppins", sans-serif;
+  --verticalPadding: 0 9.920634920634921vw;
+  --containerPadding: 0 6.613756613756613vw;
+  --containerMarginTop: 9.25925925925926vw;
+  --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
+  --mobileContainerMarginTop: 16vw;
+  --mobileContainerPadding: 0 6.4vw;
+  --mobileBackgroundContainerPadding: 10.666666666666668vw 6.4vw;
+  --borderRadius: 0.6613756613756614vw;
+  --mobileBorderRadius: 2.666666666666667vw;
+  --padding100: 6.613756613756613vw;
+  --margin15: 0.992063492063492vw;
+  --margin20: 1.3227513227513228vw;
+  --margin30: 1.984126984126984vw;
+  --margin70: 4.62962962962963vw;
+  --margin100: 6.613756613756613vw;
+  --gap70: 4.62962962962963vw;
+  --gap20: 1.3227513227513228vw;
+  --gap30: 1.984126984126984vw;
+  --gap40: 2.6455026455026456vw;
+  --gap50: 3.3068783068783065vw;
+  --mainbgColor: #12171c;
+  --bgColor: #0c1117;
+  --font18: 1.1904761904761905vw;
+  --font24: 1.5873015873015872vw;
+  --font28: 1.8518518518518516vw;
+  --lineHeight18: 1.6666666666666667vw;
+  --lineHeight24: 2.2222222222222223vw;
+  --lineHeight28: 2.169973544973545vw;
+  --letterSpace18: 0.023809523809523808vw;
+  --letterSpace24: 0.015873015873015872vw;
+  --letterSpace28: 0.03703703703703704vw;
+  --mfont16: 4.266666666666667vw;
+  --mlineHeight16: 5.973333333333334vw;
+  --mletterSpace16: 0.08533333333333333vw;
+
+  --mfont12: 3.2vw;
+  --mlineHeight12: 4.4799999999999995vw;
+  --mletterSpace12: 0.4266666666666667vw;
+  --mfont14: 3.733333333333334vw;
+  --mlineHeight14: 5.226666666666667vw;
+  --mletterSpace14: 0.4266666666666667vw;
+
+  --mfont18: 4.8vw;
+  --mlineHeight18: 5.624vw;
+  --mletterSpace18: 0.4266666666666667vw;
+}
+
+.container {
+  margin-top: var(--containerMarginTop);
+  padding: var(--verticalPadding);
+  display: flex;
+  gap: 3.439153439153439vw;
+}
+
+.sticky {
+  width: 36.64021164021164vw;
+  position: sticky;
+  top: 39%;
+  height: 50vh;
+}
+
+.tittle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30vw;
+}
+
+.scroll {
+  width: 40.07936507936508vw;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.984126984126984vw;
+}
+
+.card {
+  display: flex;
+  gap: 1.6534391534391533vw;
+  height: 13.756613756613756vw;
+  background: #f5f5f5;
+
+  padding: 1.984126984126984vw;
+  border-radius: 1.5873015873015872vw;
+}
+
+.number {
+  width: 3.968253968253968vw;
+  height: 3.968253968253968vw;
+  border-radius: 0.6613756613756614vw;
+  background: #3763eb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number h3 {
+  color: #ffffff;
+}
+
+.content {
+  width: 30.489417989417987vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16vw;
+    padding: 0 6.4vw;
+  }
+
+  .sticky {
+    width: 100%;
+    position: relative;
+    top: auto;
+    height: max-content;
+  }
+
+  .tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .scroll {
+    width: 87.2vw;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5.333333333333334vw;
+    margin-top: 8vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6534391534391533vw;
+    height: 66.66666666666666vw;
+    background: #f5f5f5;
+    width: 100%;
+
+    padding: 5.333333333333334vw;
+    border-radius: calc(2.1333333333333333vw + 2.1333333333333333vw);
+  }
+
+  .number {
+    width: 13.333333333333334vw;
+    height: 13.333333333333334vw;
+    border-radius: 2.666666666666667vw;
+    background: #3763eb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: calc(2.1333333333333333vw + 2.1333333333333333vw);
+  }
+
+  .number h3 {
+    color: #ffffff;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content h3 {
+    margin-bottom: 2.1333333333333333vw;
+  }
+}

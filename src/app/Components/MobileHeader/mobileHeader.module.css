@@ -10,6 +10,11 @@
     align-items: center;
   }
 
+  .imgContainer img {
+    width: 35.46666666666667vw;
+    height: 8.533333333333333vw;
+  }
+
   .logo {
     font-weight: 800;
     letter-spacing: normal;
@@ -18,13 +23,25 @@
   }
 
   .openMenu {
-    background: #ffffff !important;
+    background: #082435;
+
+    z-index: 52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10.666666666666668vw 6.4vw 10.666666666666668vw 8.533333333333333vw;
+
+    position: fixed;
+    top: 16.266666666666666vw;
+    right: 0;
+    width: 100vw;
   }
 
   .bars {
-    width: 8vw;
-    height: 6vw;
+    width: 6vw;
+    height: 4vw;
     background: transparent;
+    margin-bottom: 2vw;
   }
 
   .bar {
@@ -52,6 +69,10 @@
     left: 0;
   }
 
+  .open {
+    margin-top: 2.5vw;
+  }
+
   .open .bar:nth-child(1) {
     top: 0;
     transform: rotate(45deg);
@@ -64,7 +85,7 @@
   .open .bar:nth-child(3) {
     transform: rotate(-45deg);
 
-    bottom: 5.5vw;
+    bottom: 3.5vw;
   }
 
   .fixedmHeadContainer {
@@ -74,13 +95,50 @@
   .hMenu {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
-    gap: 4vw;
+    gap: 10.666666666666668vw;
+  }
+
+  .hMenu a {
+    color: #ffffff;
   }
 
   .hMenu h4 {
     font-size: 3.733333333333334vw;
     font-weight: 500;
+  }
+
+  .dropdownContent {
+    display: flex;
+    gap: 2.1333333333333333vw;
+  }
+
+  .dropdownItem {
+    width: 26.93333333333333vw;
+  }
+
+  .dropdownItemImage {
+    width: 26.93333333333333vw;
+    height: 21.333333333333336vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .socials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16vw;
+  }
+
+  .socials a {
+    color: #ffffff;
+  }
+
+  .socialIcons {
+    margin-top: 6.4vw;
+    display: flex;
+    gap: 4vw;
   }
 }

@@ -132,6 +132,7 @@
   .cards {
     flex-direction: column;
     gap: 8vw;
+    margin-top: 8vw;
   }
 
   .card {
