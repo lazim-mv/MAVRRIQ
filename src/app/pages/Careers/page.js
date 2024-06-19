@@ -24,23 +24,21 @@ const Page = () => {
   }, [screenSize]);
 
   useEffect(() => {
-    if (containerRef.current) {
-      const movingImages = containerRef.current;
-      const rate = 100;
-      const distance = movingImages.scrollWidth / 2;
-      const time = distance / rate;
+    const movingImages = containerRef.current;
+    const rate = 100;
+    const distance = movingImages.scrollWidth / 2;
+    const time = distance / rate;
 
-      gsap.to(movingImages, {
-        x: `-${distance}px`,
-        duration: time,
-        repeat: -1,
-        ease: Linear.easeNone,
-        modifiers: {
-          x: (x) => `${parseFloat(x) % distance}px`,
-        },
-      });
-    }
-  }, [containerRef]);
+    gsap.to(movingImages, {
+      x: `-${distance}px`,
+      duration: time,
+      repeat: -1,
+      ease: Linear.easeNone,
+      modifiers: {
+        x: (x) => `${parseFloat(x) % distance}px`,
+      },
+    });
+  }, []);
 
   return (
     <>
