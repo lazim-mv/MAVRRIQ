@@ -21,7 +21,7 @@ const Container10 = () => {
       <div className={styles.scroll}>
         <div className={styles.cards}>
           {content.cardData.map((data, index) => (
-            <div className={styles.card}>
+            <div className={styles.card} key={index}>
               <div className={styles.number}>
                 <CardHeading sectionText={data.number} />
               </div>

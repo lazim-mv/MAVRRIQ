@@ -18,7 +18,7 @@ const Container9 = () => {
       </div>
       <div className={styles.cards}>
         {content.cardData.map((data, index) => (
-          <div className={styles.card}>
+          <div className={styles.card} key={index}>
             <CardHeading sectionText={data.heading} />
             <SectionDescription sectionText={data.desc} />
           </div>
