@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./hero.module.css";
 import {
   BtnComponent,
@@ -13,9 +13,57 @@ import { useWindowSize } from "@/app/utils/windowSize";
 import heroImg from "../../../../public/hero/1.png";
 import mHeroImg from "../../../../public/hero/m1.png";
 import coverImage from "../../../../public/container2/1.png";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // Ensure to import ScrollTrigger
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const { windowSize, isSmallScreen } = useWindowSize();
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const image = imageRef.current;
+    gsap.set(image, { scale: 1.1 });
+    // Define GSAP animation
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: image,
+        start: "top center",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    // Initial scale
+    const initialScale = 1.1;
+    const minScale = 1.0;
+
+    // Calculate scale range
+    const scaleRange = initialScale - minScale;
+
+    // Add scaling animation
+    tl.to(image, {
+      scale: minScale,
+      duration: 4,
+      ease: "power1.out",
+      onUpdate: () => {
+        const currentScale = minScale + tl.progress() * scaleRange;
+        if (currentScale >= minScale && currentScale <= initialScale) {
+          tl.vars.scale = currentScale;
+        }
+        console.log(currentScale, "proooog");
+      },
+    });
+
+    // Cleanup ScrollTrigger
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => {
+        trigger.kill();
+      });
+    };
+  }, []);
+
   return (
     <>
       <div className={styles.heroContainer}>
@@ -33,20 +81,14 @@ const Hero = () => {
             />
           </div>
         </div>
-
-        {/* <div className={styles.right}>
-          <img
-            src={isSmallScreen ? mHeroImg.src : heroImg.src}
-            alt="Asian Engineer"
-            className={styles.heroImage}
-          />
-        </div> */}
       </div>
       <div className={styles.imgContainer1}>
         <img
+          ref={imageRef}
           src={isSmallScreen ? mHeroImg.src : coverImage.src}
           alt="Asian Engineer"
           className={styles.heroImage}
+          style={{ transform: "scale(1.2)" }} // Initial scale of 1.2
         />
       </div>
     </>

@@ -1,0 +1,100 @@
+.maintainance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: var(9.920634920634921vw);
+  /* background-color: #0d0d0d; */
+  background-color: #051d48;
+}
+
+.maintainceLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #fff;
+  height: 28.125vw;
+  /* padding-right: 5vw; */
+  width: 45%;
+}
+
+.logoBrandName {
+  font-size: 5vw;
+  text-align: center;
+  margin-left: 1.5vw;
+  color: #fff;
+}
+
+.comingSoon {
+  padding: 0 0 0.3306878306878307vw 0;
+  color: #fff;
+}
+
+.maintainceLogo img {
+  width: 28vw;
+}
+
+.maintainceLogo p {
+  font-size: 1.3227513227513228vw;
+  font-size: 1.3227513227513228vw;
+  text-align: center;
+  width: 70%;
+  color: #fff;
+}
+
+.lottieMaintainance {
+  width: 50vw;
+  padding-right: 8vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .lottieMaintainance {
+    width: 87.2vw;
+    padding-right: 0;
+  }
+
+  /* Maintainance */
+  .maintainance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 6.4vw;
+    padding-top: 40vw;
+  }
+
+  .maintainceLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 0;
+    border-bottom: 2px solid #fff;
+    height: auto;
+    padding-right: 0;
+    padding-bottom: 6.666666666666667vw;
+    width: auto;
+  }
+
+  .logoBrandName {
+    font-size: 20vw;
+    color: #fff;
+  }
+
+  .maintainceLogo img {
+    width: 70vw;
+    margin-left: 3.4666666666666663vw;
+  }
+
+  .maintainceLogo p {
+    font-size: 3.733333333333334vw;
+    text-align: center;
+    width: 70%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .maintainceLogo h2 {
+    padding: 2.666666666666667vw 0 1.3333333333333335vw 0 !important;
+  }
+}

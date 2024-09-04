@@ -13,6 +13,7 @@ import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import MobileHeader from "./Components/MobileHeader/MobileHeader";
 import Testimonial from "./Components/Testimonial/Testimonial";
+import UnderMaintainance from "./Components/undermaintainance/UnderMaintainance";
 
 export default function Home() {
   const [screenSize, setScreenSize] = useState(null);
@@ -24,7 +25,7 @@ export default function Home() {
   if (screenSize !== null) {
     return (
       <main>
-        <Header />
+        {/* <Header />
         <MobileHeader />
         <Hero />
         <Container2 />
@@ -36,7 +37,8 @@ export default function Home() {
         <Blogs />
         <Container8 />
         <Contact />
-        <Footer />
+        <Footer /> */}
+        <UnderMaintainance />
       </main>
     );
   }
