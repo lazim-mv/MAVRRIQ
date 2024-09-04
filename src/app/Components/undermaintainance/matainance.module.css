@@ -24,11 +24,13 @@
   text-align: center;
   margin-left: 1.5vw;
   color: #fff;
+  line-height: normal;
 }
 
 .comingSoon {
   padding: 0 0 0.3306878306878307vw 0;
   color: #fff;
+  line-height: normal;
 }
 
 .maintainceLogo img {
@@ -41,6 +43,7 @@
   text-align: center;
   width: 70%;
   color: #fff;
+  line-height: normal;
 }
 
 .lottieMaintainance {
