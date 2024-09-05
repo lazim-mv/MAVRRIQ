@@ -34,7 +34,7 @@ const Page = () => {
         <div className={styles.firstContainer}>
           <div className={styles.titles}>
             <SectionName sectionText="About Us" />
-            <SectionTitle sectionText="Leading Business Setup Company in Dubai" />
+            <SectionTitle sectionText="Discover the Expertise Behind Mavrriq" />
           </div>
 
           <div className={styles.imgContainer}>
@@ -45,7 +45,7 @@ const Page = () => {
           </div>
         </div>
 
-        <Container2 />
+        <Container2 page="about" />
         <Horizontal />
 
         <div className={styles.container3}>
@@ -61,11 +61,11 @@ const Page = () => {
         <div className={styles.container3}>
           <div className={styles.content3}>
             <SectionName sectionText={container3.vission} />
-            <SectionTitle sectionText={container3.SectionTitle} />
-            <SectionDescription sectionText={container3.desc} />
+            <SectionTitle sectionText={container3.vissionSectionTitle} />
+            <SectionDescription sectionText={container3.vissionDesc} />
           </div>
           <div className={styles.imgContainer3}>
-            <img src={container3.img} alt="Asian Engineer" />
+            <img src={container3.vissionImg} alt="Asian Engineer" />
           </div>
         </div>
 

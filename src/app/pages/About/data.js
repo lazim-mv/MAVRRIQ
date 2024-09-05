@@ -1,48 +1,51 @@
 const container3 = {
   mission: "Our Mission",
-  SectionTitle:
-    "Businesses need qualified business consulting and professiona dedicated.",
-  desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and success. With true results and a clear focus on the strategic actions tailored to achieve the unique expectations of our clients, we provide a detailed blueprint and picture of how to establish and .",
+  SectionTitle: "Empowering Businesses with Innovative Solutions",
+  desc: "Our mission is to empower businesses with innovative, tailored solutions that foster growth and success. We are committed to delivering exceptional value through our expertise in consulting, legal compliance, and financial services, while upholding the highest standards of integrity, excellence, and client-centricity. We strive to be the trusted partner that businesses rely on to navigate challenges, seize opportunities, and achieve their full potential across global markets.",
+  vissionSectionTitle: "Businesses need qualified business consulting.",
+  vissionDesc:
+    "Our vision at Mavrriq Corporate Professionals is to be the leading global consulting firm, recognized for transforming businesses through strategic innovation and unparalleled expertise. We aspire to set the standard for excellence in every market we serve, fostering sustainable growth and long-term success for our clients. We aim to create a world where businesses confidently navigate complexities and achieve their highest potential, driven by our commitment to integrity, collaboration, and client-focused solutions.",
   btnText: "Know More",
-  img: "/container5/1.png",
+  img: "/aboutpage/vissionmission/1.png",
+  vissionImg: "/aboutpage/vissionmission/2.png",
   vission: "Our Vission",
 };
 
 const container5Data = {
   sectionName: "Core Values",
-  sectionTitle: "How we take your business to the next level",
+  sectionTitle: "The Values That Drive Our Excellence",
   btnText: "All Work",
   cardData: [
     {
       img: "/horizontal/1.svg",
-      cardHeading: "Growth Opportunities",
-      desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
+      cardHeading: "Integrity",
+      desc: "We uphold the highest standards of honesty and transparency in all our dealings, ensuring that trust is the foundation of our client relationships.",
     },
     {
-      img: "/horizontal/1.svg",
-      cardHeading: "Growth Opportunities",
-      desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
+      img: "/horizontal/2.svg",
+      cardHeading: "Excellence",
+      desc: "We are committed to delivering the highest quality of service, constantly striving for improvement and innovation in everything we do.",
     },
     {
-      img: "/horizontal/1.svg",
-      cardHeading: "Growth Opportunities",
-      desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
+      img: "/horizontal/3.svg",
+      cardHeading: "Client-Centricity",
+      desc: "Our clients are at the heart of our business. We focus on understanding their unique needs and providing customized solutions that drive their success.",
     },
     {
-      img: "/horizontal/1.svg",
-      cardHeading: "Growth Opportunities",
-      desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
+      img: "/horizontal/4.svg",
+      cardHeading: "Collaboration",
+      desc: "We believe in the power of teamwork, both within our organization and with our clients, to achieve shared goals and create lasting impact.",
     },
-    {
-      img: "/horizontal/1.svg",
-      cardHeading: "Growth Opportunities",
-      desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
-    },
-    {
-      img: "/horizontal/1.svg",
-      cardHeading: "Growth Opportunities",
-      desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
-    },
+    // {
+    //   img: "/horizontal/1.svg",
+    //   cardHeading: "Growth Opportunities",
+    //   desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
+    // },
+    // {
+    //   img: "/horizontal/1.svg",
+    //   cardHeading: "Growth Opportunities",
+    //   desc: "Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting .",
+    // },
   ],
 };
 

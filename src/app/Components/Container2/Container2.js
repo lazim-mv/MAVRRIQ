@@ -11,7 +11,7 @@ import {
 import Brands from "../brands/Brands";
 import { useWindowSize } from "@/app/utils/windowSize";
 
-const Container2 = () => {
+const Container2 = ({ page }) => {
   const imageSources = [
     "/brands/1.svg",
     "/brands/2.svg",
@@ -56,16 +56,29 @@ const Container2 = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </>
             )}
-            {container2.SectionTitle}
+            {page === "about"
+              ? container2.aboutSectionTitle
+              : container2.SectionTitle}
           </h2>
           <div className={styles.descriptionContainer}>
-            <SectionDescription sectionText={container2.desc1} />
-            <SectionDescription sectionText={container2.desc2} />
-            <SectionDescription sectionText={container2.desc3} />
-            <BtnComponent
-              buttonText={container2.btnText}
-              customClassName="container2ArrowWraper"
+            <SectionDescription
+              sectionText={
+                page === "about" ? container2.aboutDesc1 : container2.desc1
+              }
             />
+            <SectionDescription
+              sectionText={
+                page === "about" ? container2.aboutDesc2 : container2.desc2
+              }
+            />
+            {/* <SectionDescription sectionText={container2.desc3} /> */}
+
+            {!page && (
+              <BtnComponent
+                buttonText={container2.btnText}
+                customClassName="container2ArrowWraper"
+              />
+            )}
           </div>
         </div>
       </div>

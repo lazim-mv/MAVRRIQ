@@ -104,12 +104,13 @@
 
 .descriptionContainer p:nth-child(2) {
   margin-top: 1.5873015873015872vw;
-}
-
-.descriptionContainer p:nth-child(3) {
-  margin-top: 1.5873015873015872vw;
   margin-bottom: 2.1164021164021163vw;
 }
+
+/* .descriptionContainer p:nth-child(3) {
+  margin-top: 1.5873015873015872vw;
+  margin-bottom: 2.1164021164021163vw;
+} */
 
 .clientsImgContainer {
   margin-top: 5.952380952380952vw;
@@ -159,12 +160,13 @@
 
   .descriptionContainer p:nth-child(2) {
     margin-top: 1.5873015873015872vw;
-  }
-
-  .descriptionContainer p:nth-child(3) {
-    margin-top: 1.5873015873015872vw;
     margin-bottom: calc(2.1333333333333333vw + 2.1333333333333333vw);
   }
+
+  /* .descriptionContainer p:nth-child(3) {
+    margin-top: 1.5873015873015872vw;
+    margin-bottom: calc(2.1333333333333333vw + 2.1333333333333333vw);
+  } */
 
   .imgContainer {
     display: none;

@@ -68,11 +68,14 @@ const Hero = () => {
     <>
       <div className={styles.heroContainer}>
         <div className={styles.left}>
-          <SectionName sectionText={hero.sectionName} />
+          {/* <SectionName sectionText={hero.sectionName} /> */}
           <h1>
-            Leading Business Setup <span>Consultants</span> in Dubai, UAE
+            Welcome to<span> Mavrriq</span> Corporate Professionals
           </h1>
-          <SectionDescription sectionText={hero.desc} />
+          <SectionDescription
+            sectionText={hero.desc}
+            width="57.67195767195767vw"
+          />
           <div className={styles.heroBtn}>
             <BtnComponent
               buttonText={hero.btnText}
@@ -88,7 +91,7 @@ const Hero = () => {
           src={isSmallScreen ? mHeroImg.src : coverImage.src}
           alt="Asian Engineer"
           className={styles.heroImage}
-          style={{ transform: "scale(1.2)" }} // Initial scale of 1.2
+          style={{ transform: "scale(1.2)" }}
         />
       </div>
     </>
