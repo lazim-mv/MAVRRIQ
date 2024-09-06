@@ -63,6 +63,57 @@
   height: 100%;
 }
 
+.cardHeadingContent {
+  position: absolute;
+  top: 4.62962962962963vw;
+  left: 23.809523809523807vw;
+}
+
+.cardHeadingContent h4 {
+  color: #fff;
+}
+
+.cardHeadingContent h2 {
+  color: #fff;
+}
+
+.cards {
+  position: absolute;
+  top: 18.78306878306878vw;
+  left: 6.613756613756613vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.968253968253968vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 21.825396825396826vw;
+}
+
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(3) {
+  border-bottom: 0.06613756613756613vw solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 3.968253968253968vw;
+}
+
+.card p {
+  color: #fff;
+  margin-top: 0.7936507936507936vw;
+}
+
+.card h3 {
+  margin-top: 1.3227513227513228vw;
+  color: #fff;
+}
+
+.card img {
+  width: 3.968253968253968vw;
+  height: 3.968253968253968vw;
+}
+
 .btnAbsolute {
   position: absolute;
   bottom: 5.291005291005291vw;
@@ -84,5 +135,47 @@
     width: 91.46666666666667vw;
     height: 457.59999999999997vw;
     position: relative;
+  }
+
+  .cardHeadingContent {
+    position: absolute;
+    top: 13.333333333333334vw;
+    left: 8vw;
+  }
+
+  .cardHeadingContent h2 {
+    text-align: left;
+    width: 65vw;
+  }
+
+  .cards {
+    flex-direction: column;
+    top: 47.46666666666667vw;
+    gap: 8vw;
+    left: 0;
+    padding: 0 8vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    border-bottom: 0.26666666666666666vw solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 6.4vw;
+  }
+
+  .card p {
+    color: #fff;
+    margin-top: 2.1333333333333333vw;
+  }
+
+  .card h3 {
+    margin-top: 3.2vw;
+    color: #fff;
+  }
+
+  .card img {
+    width: 13.333333333333334vw;
+    height: 13.333333333333334vw;
   }
 }

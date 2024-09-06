@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./careers.module.css";
 import { SectionName, SectionTitle } from "@/app/Components/ButtonComponent";
-import { firstContainer } from "./data";
+import { container3, firstContainer } from "./data";
 import Header from "@/app/Components/Header/Header";
 import MobileHeader from "@/app/Components/MobileHeader/MobileHeader";
 import gsap from "gsap";
@@ -79,8 +79,8 @@ const Page = () => {
         </div>
       </div>
 
-      <Container2 />
-      {screenSize && <Container3 />}
+      <Container2 page="career" />
+      <Container3 content={container3} />
 
       <Container7 />
       <Contact />

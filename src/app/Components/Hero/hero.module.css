@@ -95,7 +95,6 @@
 .imgContainer1 {
   padding: var(--containerPadding);
   margin-top: 5.291005291005291vw;
-  /* transform: scale(1.1); */
 }
 
 .imgContainer1 img {
@@ -126,7 +125,7 @@
   }
 
   .left p {
-    width: 100%;
+    width: 100% !important;
     text-align: left;
     font-size: 4.8vw;
     line-height: 6.933333333333333vw;

@@ -13,8 +13,14 @@ const container2 = {
   sectionName: "Who are we?",
   SectionTitle: "Your Global Partner in Strategic Business Solutions",
   aboutSectionTitle: "The Experts Behind Your Success",
+  careerSectionName: "life at mavrriq",
+  careerSectoinTitle: "Thriving Together in a Culture of Excellence",
   btnText: "About Us",
   img: "/container2/1.png",
+  careerDesc1:
+    "Life at Mavrriq Corporate Professionals is dynamic, collaborative, and driven by a passion for excellence. We believe in fostering a work environment where innovation thrives and every team member is empowered to grow and succeed. ",
+  careerDesc2:
+    "We value diverse perspectives and encourage creative thinking, knowing that our collective strength comes from the unique talents and ideas of our people. Our culture is built on mutual respect, continuous learning, and a commitment to integrity. We invest in our employees' professional development, offering opportunities for growth, mentorship, and skill-building.",
   aboutDesc1:
     "Mavrriq Corporate Professionals is a premier management consulting firm committed to empowering businesses with strategic solutions that drive success. With a presence in key global markets—Saudi Arabia, Oman, and India—we blend local expertise with a global perspective to provide innovative, tailored services across various industries.",
   aboutDesc2:
@@ -25,6 +31,50 @@ const container2 = {
     "Our seasoned professionals specialize in corporate law, finance, taxation, intellectual property, and IT. We are committed to building long-term client partnerships, helping navigate challenges and seize opportunities with excellence, integrity, and a client-centric approach. Wherever your business needs support, Mavrriq is here to guide you.",
   desc3:
     "With true results and a clear focus on the strategic actions tailored to achieve the unique expectations of our clients, we provide a detailed blueprint and picture of how to establish and manage your business in the UAE.",
+};
+
+const container3 = {
+  sectionName: "Our Services",
+  SectionTitle: "How we take your business to the next level",
+  btnText: "About Us",
+  cardData: [
+    {
+      img: "/container3/icons/1.svg",
+      cardHeading: "Company Formation",
+      cardDescription:
+        "End-to-end support for establishing businesses, including legal registration, licensing, and compliance across different regions.",
+    },
+    {
+      img: "/container3/icons/2.svg",
+      cardHeading: "Business Consultation",
+      cardDescription:
+        "Tailored market analysis, strategic planning, and risk management to help businesses navigate and thrive in dynamic markets.",
+    },
+    {
+      img: "/container3/icons/3.svg",
+      cardHeading: "Financial & Accounting",
+      cardDescription:
+        "Specialized financial management services, including tax planning, accounting, and bookkeeping, to optimize financial performance.",
+    },
+    {
+      img: "/container3/icons/4.svg",
+      cardHeading: "Audit & Taxation",
+      cardDescription:
+        "Comprehensive audit services to ensure financial transparency and regulatory compliance across all jurisdictions.",
+    },
+    {
+      img: "/container3/icons/5.svg",
+      cardHeading: "Virtual CFO",
+      cardDescription:
+        "Comprehensive financial leadership, including budgeting, forecasting, financial reporting, and strategic financial planning, tailored to your business needs.",
+    },
+    {
+      img: "/container3/icons/5.svg",
+      cardHeading: "Intellectual Property Protection",
+      cardDescription:
+        "Protect your brand and innovations with comprehensive IP services, including trademarks, patents, and copyright management.",
+    },
+  ],
 };
 
 const container4 = {
@@ -295,6 +345,7 @@ const socialIcons = [
 export {
   hero,
   container2,
+  container3,
   container4,
   container5,
   container6,

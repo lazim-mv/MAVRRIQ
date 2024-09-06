@@ -46,7 +46,9 @@ const Container2 = ({ page }) => {
         <div className={styles.contentContainer}>
           <span className={styles.spanSectionName}>
             <span className={styles.spanDot}></span>
-            {container2.sectionName}
+            {page === "career"
+              ? container2.careerSectionName
+              : container2.sectionName}
           </span>
           <h2 className={styles.spanAndH2}>
             {isSmallScreen ? (
@@ -58,17 +60,27 @@ const Container2 = ({ page }) => {
             )}
             {page === "about"
               ? container2.aboutSectionTitle
+              : page === "career"
+              ? container2.careerSectoinTitle
               : container2.SectionTitle}
           </h2>
           <div className={styles.descriptionContainer}>
             <SectionDescription
               sectionText={
-                page === "about" ? container2.aboutDesc1 : container2.desc1
+                page === "about"
+                  ? container2.aboutDesc1
+                  : page === "career"
+                  ? container2.careerDesc1
+                  : container2.desc1
               }
             />
             <SectionDescription
               sectionText={
-                page === "about" ? container2.aboutDesc2 : container2.desc2
+                page === "about"
+                  ? container2.aboutDesc2
+                  : page === "career"
+                  ? container2.careerDesc2
+                  : container2.desc2
               }
             />
             {/* <SectionDescription sectionText={container2.desc3} /> */}
