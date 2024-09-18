@@ -26,7 +26,7 @@ export default function Home() {
   if (screenSize !== null) {
     return (
       <main>
-        <Header />
+        {/* <Header />
         <MobileHeader />
         <Hero />
         <Container2 />
@@ -38,8 +38,8 @@ export default function Home() {
         <Blogs />
         <Container8 />
         <Contact />
-        <Footer />
-        {/* <UnderMaintainance /> */}
+        <Footer /> */}
+        <UnderMaintainance />
       </main>
     );
   }
