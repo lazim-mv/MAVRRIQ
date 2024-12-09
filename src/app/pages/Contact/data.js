@@ -14,7 +14,7 @@ const firstContainer = {
           icon: "/footer/mail.svg",
         },
         {
-          text: "27/1129c padmini arcade near apco hyundai calicut kerala 673004",
+          text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE",
           icon: "/footer/location.svg",
         },
       ],

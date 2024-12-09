@@ -46,7 +46,7 @@ const Contact = () => {
                     priority={true}
                     unoptimized
                   />
-                  <a href={data.link}>
+                  <a className={styles.cardLink} href={data.link}>
                     <h3>{data.text}</h3>
                   </a>
                 </div>

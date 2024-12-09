@@ -30,10 +30,10 @@
     flex-direction: column;
     align-items: center;
     padding: 10.666666666666668vw 6.4vw 10.666666666666668vw 8.533333333333333vw;
-
+    width: 100vw;
     position: fixed;
     top: 16.266666666666666vw;
-    right: 0;
+    left: 0;
     width: 100vw;
   }
 
@@ -122,6 +122,7 @@
     width: 26.93333333333333vw;
     height: 21.333333333333336vw;
     margin-bottom: 3.2vw;
+    border-radius: 2.1333333333333333vw;
   }
 
   .socials {

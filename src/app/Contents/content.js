@@ -4,7 +4,7 @@ const hero = {
   sectionName: "Your Global Advisory",
   SectionTitle: "Leading Business Setup Consultants in Dubai, UAE",
   desc: "We are committed to providing exceptional management consulting services that drive success for businesses across the globe. With our strategic presence in Saudi Arabia, Oman, and India, we offer a wide range of services tailored to meet the unique needs of each market.",
-  btnText: "Our Services",
+  btnText: "About Us",
   img: "/hero/1.png",
   mImg: "/hero/m1.png",
 };
@@ -22,7 +22,7 @@ const container2 = {
 
 const container3 = {
   sectionName: "Our Services",
-  SectionTitle: "How we take your business to the next level",
+  SectionTitle: "Comprehensive Services to Empower Your Business Across Borders",
   btnText: "About Us",
   cardData: [
     {
@@ -267,7 +267,7 @@ const contact = {
       link: "mailto:ca@mavrriq.com",
     },
     {
-      text: "27/1129c padmini arcade near apco hyundai calicut kerala 673004",
+      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE",
       icon: "/contact/location.svg",
       link: "",
     },

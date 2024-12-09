@@ -64,10 +64,10 @@ const Footer = () => {
                   <a href="/pages/Careers">Careers</a>
                 </div>
                 <div>
-                  <a href="/pages/E3Global">Blogs</a>
+                  <a href="/pages/Blogs">Blogs</a>
                 </div>
                 <div>
-                  <a href="/pages/E3Global">Contact Us</a>
+                  <a href="/pages/Contact">Contact Us</a>
                 </div>
               </div>
             </div>

@@ -27,7 +27,7 @@ const Container5 = ({ content }) => {
         <SectionTitle sectionText={content?.SectionTitle} />
         <SectionDescription sectionText={content?.desc} />
         {content?.desc2 && <SectionDescription sectionText={content.desc2} />}
-        <a href="/pages/About">
+        <a href="/pages/Contact">
           <BtnComponent buttonText={content?.btnText} customClassName="container2ArrowWraper" />
         </a>
       </div>
