@@ -6,7 +6,7 @@ import styles from "./mobileHeader.module.css";
 import { BtnComponent } from "../ButtonComponent";
 import { useLenis } from "@studio-freight/react-lenis";
 import logo from "../../../../public/logo.svg";
-import wlogo from "../../../../public/footer/Logo.svg";
+import wlogo from "../../../../public/footer/logo.svg";
 
 function MobileHeader() {
   const pathname = usePathname();
