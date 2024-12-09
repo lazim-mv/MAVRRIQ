@@ -33,12 +33,14 @@ const Container8 = () => {
         <div className={styles.firstCol}>
           <SectionName sectionText={container8Data.sectionName} />
           <SectionTitle sectionText={container8Data.sectionTitle} />
-          <div className={styles.btnContainer}>
-            <BtnComponent
-              buttonText="Get Started"
-              customClassName="container2ArrowWraper"
-            />
-          </div>
+          <a href="/pages/Contact">
+            <div className={styles.btnContainer}>
+              <BtnComponent
+                buttonText="Get Started"
+                customClassName="container2ArrowWraper"
+              />
+            </div>
+          </a>
         </div>
         <div className={styles.secondCol}>
           {cardData.map((data, index) => (

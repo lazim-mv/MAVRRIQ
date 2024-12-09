@@ -47,12 +47,14 @@ const Container3 = ({ content, page, mHeight }) => {
           ))}
         </div>
         {page && (
-          <div className={styles.btnAbsolute}>
-            <BtnComponent
-              buttonText="Contact Us"
-              customClassName="container2ArrowWraper"
-            />
-          </div>
+          <a href="/pages/Contact">
+            <div className={styles.btnAbsolute}>
+              <BtnComponent
+                buttonText="Contact Us"
+                customClassName="container2ArrowWraper"
+              />
+            </div>
+          </a>
         )}
       </div>
     </div>

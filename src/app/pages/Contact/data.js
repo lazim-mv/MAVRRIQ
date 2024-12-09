@@ -6,11 +6,11 @@ const firstContainer = {
       img: "/contactPage/1.png",
       contentData: [
         {
-          text: "+44 (0) 1925 768 250",
+          text: "+91 96337 77003",
           icon: "/footer/call.svg",
         },
         {
-          text: "mavrriq@gmail.com",
+          text: "ca@mavrriq.com",
           icon: "/footer/mail.svg",
         },
         {
@@ -23,15 +23,15 @@ const firstContainer = {
       img: "/contactPage/2.png",
       contentData: [
         {
-          text: "+44 (0) 1925 768 250",
+          text: "+966 511587575, +966 511597575",
           icon: "/footer/call.svg",
         },
         {
-          text: "mavrriq@gmail.com",
+          text: "ca@mavrriq.com",
           icon: "/footer/mail.svg",
         },
         {
-          text: "27/1129c padmini arcade near apco hyundai calicut kerala 673004",
+          text: "Office No:318, Building No: 7097, 2106, Jabor bin Rashid Road, Al Murabba, Riyadh, 12628 Riyadh, KSA",
           icon: "/footer/location.svg",
         },
       ],
@@ -40,15 +40,15 @@ const firstContainer = {
       img: "/contactPage/3.png",
       contentData: [
         {
-          text: "+44 (0) 1925 768 250",
+          text: "+968 77208850",
           icon: "/footer/call.svg",
         },
         {
-          text: "mavrriq@gmail.com",
+          text: "ca@mavrriq.com",
           icon: "/footer/mail.svg",
         },
         {
-          text: "27/1129c padmini arcade near apco hyundai calicut kerala 673004",
+          text: "Office No. 201, 2nd Floor, Majan1 Building, PO Box 114, postal code 315, Ghala Heights, Muscat",
           icon: "/footer/location.svg",
         },
       ],

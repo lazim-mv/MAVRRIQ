@@ -46,12 +46,14 @@ const Blogs = () => {
           </div>
         ))}
       </div>
-      <div className={styles.btnContainer}>
-        <BtnComponent
-          buttonText={blogs.btnText}
-          customClassName="container2ArrowWraper"
-        />
-      </div>
+      <a href="/pages/Blogs">
+        <div className={styles.btnContainer}>
+          <BtnComponent
+            buttonText={blogs.btnText}
+            customClassName="container2ArrowWraper"
+          />
+        </div>
+      </a>
     </div>
   );
 };

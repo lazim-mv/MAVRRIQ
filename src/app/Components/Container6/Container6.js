@@ -26,10 +26,12 @@ const Container6 = () => {
           <div className={styles.content}>
             <SectionTitle sectionText={container6.SectionTitle} />
             <SectionDescription sectionText={container6.desc} />
-            <BtnComponent
-              buttonText={container6.btnText}
-              customClassName="container2ArrowWraper"
-            />
+            <a href="/pages/Contact">
+              <BtnComponent
+                buttonText={container6.btnText}
+                customClassName="container2ArrowWraper"
+              />
+            </a>
           </div>
           <div className={styles.right}>
             {container6.cardData.map((data, index) => (

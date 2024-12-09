@@ -70,22 +70,24 @@ const Container2 = ({ content }) => {
             }
 
             {content?.btnText && (
-              <BtnComponent
-                buttonText={content?.btnText}
-                customClassName="container2ArrowWraper"
-              />
+              <a href="/pages/About">
+                <BtnComponent
+                  buttonText={content?.btnText}
+                  customClassName="container2ArrowWraper"
+                />
+              </a>
             )}
           </div>
         </div>
       </div>
-      {/* <div className={styles.clientsImgContainer}>
+      <div className={styles.clientsImgContainer}>
         <Brands
           imageSources={repeatedImageSources}
           initialAnimateValue="-160%"
           hoverDuration="600"
           duration="650"
         />
-      </div> */}
+      </div>
     </>
   );
 };

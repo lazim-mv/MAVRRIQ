@@ -56,7 +56,7 @@ const container3 = {
         "Comprehensive financial leadership, including budgeting, forecasting, financial reporting, and strategic financial planning, tailored to your business needs.",
     },
     {
-      img: "/container3/icons/5.svg",
+      img: "/container3/icons/6.svg",
       cardHeading: "Intellectual Property Protection",
       cardDescription:
         "Protect your brand and innovations with comprehensive IP services, including trademarks, patents, and copyright management.",
@@ -259,14 +259,17 @@ const contact = {
     {
       text: "+91 96337 77003",
       icon: "/contact/call.svg",
+      link: "tel:919633777003",
     },
     {
       text: "ca@mavrriq.com",
       icon: "/contact/mail.svg",
+      link: "mailto:ca@mavrriq.com",
     },
     {
       text: "27/1129c padmini arcade near apco hyundai calicut kerala 673004",
       icon: "/contact/location.svg",
+      link: "",
     },
   ],
 };

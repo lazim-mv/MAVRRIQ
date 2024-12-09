@@ -31,10 +31,12 @@ const Footer = () => {
         />
         <div className={styles.titles}>
           <SectionTitle sectionText={footer.sectionTitle} />
-          <BtnComponent
-            buttonText={footer.btnText}
-            customClassName="container2ArrowWraper"
-          />
+          <a href="/pages/Contact">
+            <BtnComponent
+              buttonText={footer.btnText}
+              customClassName="container2ArrowWraper"
+            />
+          </a>
         </div>
         <div className={styles.absoluteContainer}>
           <div className={styles.contentContainer}>
@@ -72,20 +74,20 @@ const Footer = () => {
             <div className={styles.thirdCol}>
               <SectionDescription sectionText="Get In Touch" />
               <div className={styles.address}>
-              {footer.getInTouch.map((data, index) => (
-                <div className={styles.card} key={index}>
-                  <Image
-                    src={data.icon}
-                    alt="Asian Engineer"
-                    width={100}
-                    height={100}
-                    quality={100}
-                    priority={true}
-                    unoptimized
-                  />
-                  <h3>{data.text}</h3>
-                </div>
-              ))}
+                {footer.getInTouch.map((data, index) => (
+                  <div className={styles.card} key={index}>
+                    <Image
+                      src={data.icon}
+                      alt="Asian Engineer"
+                      width={100}
+                      height={100}
+                      quality={100}
+                      priority={true}
+                      unoptimized
+                    />
+                    <h3>{data.text}</h3>
+                  </div>
+                ))}
               </div>
             </div>
             <div className={styles.fourthCol}>

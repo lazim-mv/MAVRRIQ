@@ -76,7 +76,7 @@ const Hero = () => {
             sectionText={hero.desc}
             width="57.67195767195767vw"
           />
-          <a href="/pages/Services">
+          <a href="/pages/About">
             <div className={styles.heroBtn}>
               <BtnComponent
                 buttonText={hero.btnText}

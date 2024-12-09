@@ -53,10 +53,12 @@ const Testimonial = () => {
         <SectionTitle sectionText={testimonial.sectionTitle} />
         {screenSize > 768 && (
           <>
-            <BtnComponent
-              buttonText={testimonial.btnText}
-              customClassName="container2ArrowWraper"
-            />
+            <a href="/pages/Contact">
+              <BtnComponent
+                buttonText={testimonial.btnText}
+                customClassName="container2ArrowWraper"
+              />
+            </a>
             <div className={styles.arrowContainer}>
               <ArrowButtons prevImage={prevImage} nextImage={nextImage} />
             </div>
@@ -70,9 +72,8 @@ const Testimonial = () => {
               className={styles.card}
               style={{
                 transform: `translateX(-${currentIndex * dynamicValue}vw)`,
-                transition: `transform 1.5s ease, ${
-                  screenSize > 768 ? "width" : "height"
-                } 3s ease`,
+                transition: `transform 1.5s ease, ${screenSize > 768 ? "width" : "height"
+                  } 3s ease`,
               }}
               key={index}
             >

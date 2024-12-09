@@ -46,7 +46,9 @@ const Contact = () => {
                     priority={true}
                     unoptimized
                   />
-                  <h3>{data.text}</h3>
+                  <a href={data.link}>
+                    <h3>{data.text}</h3>
+                  </a>
                 </div>
               ))}
             </div>
