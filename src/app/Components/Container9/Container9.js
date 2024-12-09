@@ -13,50 +13,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-const Container9 = ({ content, className }) => {
-  useEffect(() => {
-    // gsap.registerPlugin(ScrollTrigger);
+const Container9 = ({ content, className, scrollLength }) => {
 
+  useEffect(() => {
     const mm = gsap.matchMedia();
     const breakPoint = 768;
 
-    mm.add(
-      {
-        isDesktop: `(min-width: ${breakPoint}px)`,
-        isMobile: `(max-width: ${breakPoint - 1}px)`,
-      },
-      (context) => {
-        const { isDesktop, isMobile } = context.conditions;
+    const initAnimations = () => {
+      mm.add(
+        {
+          isDesktop: `(min-width: ${breakPoint}px)`,
+          isMobile: `(max-width: ${breakPoint - 1}px)`,
+        },
+        (context) => {
+          const { isDesktop } = context.conditions;
 
-        if (isDesktop) {
-          let sections = gsap.utils.toArray(`.${styles.card}`);
-          console.log(sections, "sssssssssection");
-          gsap.to(sections, {
-            xPercent: -70 * (sections.length + 1),
-            ease: "none",
-            scrollTrigger: {
-              trigger: `.${styles.card}`,
-              start: "bottom 80%",
-              end: "bottom top",
-              scrub: 1,
-              // markers: true,
-            },
-          });
+          if (isDesktop) {
+            const sections = gsap.utils.toArray(`.${styles.card}`);
+            if (!sections.length) {
+              console.warn("No sections found for animation!");
+              return;
+            }
 
-          return () => {
-            ScrollTrigger.getAll().forEach((st) => st.kill());
-          };
-        } else if (isMobile) {
+            gsap.to(sections, {
+              xPercent: -70 * (sections.length + scrollLength),
+              ease: "none",
+              scrollTrigger: {
+                trigger: `.${styles.cards}`,
+                start: "bottom 80%",
+                end: "bottom top",
+                scrub: 1,
+              },
+            });
+          }
+
           return () => {
             ScrollTrigger.getAll().forEach((st) => st.kill());
           };
         }
+      );
+    };
 
-        return () => {
-          ScrollTrigger.getAll().forEach((st) => st.kill());
-        };
-      }
-    );
+    setTimeout(initAnimations, 50);
+    return () => mm.revert();
   }, []);
 
   return (
