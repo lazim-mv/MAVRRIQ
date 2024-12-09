@@ -45,7 +45,7 @@ const Page = () => {
           </div>
         </div>
 
-        <Container2 content={container2} />
+        <Container2 content={container2} clientLogos={true} />
         <Horizontal />
 
         <div className={styles.container3}>

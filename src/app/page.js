@@ -29,7 +29,7 @@ export default function Home() {
         <Header />
         <MobileHeader />
         <Hero />
-        <Container2 content={container2} />
+        <Container2 content={container2} clientLogos={true} />
         <Container3 content={container3} page="Home" mHeight="444vw" />
         <Container4 />
         <Container5 content={container5} />

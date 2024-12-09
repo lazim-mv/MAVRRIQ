@@ -11,27 +11,18 @@ import {
 import Brands from "../brands/Brands";
 import { useWindowSize } from "@/app/utils/windowSize";
 
-const Container2 = ({ content }) => {
+const Container2 = ({ content, clientLogos }) => {
   const imageSources = [
-    "/brands/1.svg",
-    "/brands/2.svg",
-    // "/brands/3.svg",
-    "/brands/4.svg",
-    "/brands/5.svg",
-    "/brands/6.svg",
-    "/brands/7.svg",
-    "/brands/8.svg",
-    "/brands/9.svg",
-    "/brands/10.svg",
-    "/brands/11.svg",
-    "/brands/12.svg",
-    "/brands/13.svg",
-    "/brands/14.svg",
-    "/brands/15.svg",
-    "/brands/16.svg",
-    "/brands/17.svg",
-    "/brands/18.svg",
-    "/brands/19.svg",
+    "/clientLogos/1.svg",
+    "/clientLogos/2.svg",
+    "/clientLogos/3.svg",
+    "/clientLogos/4.svg",
+    "/clientLogos/5.svg",
+    "/clientLogos/6.svg",
+    "/clientLogos/7.svg",
+    "/clientLogos/8.svg",
+    "/clientLogos/9.svg",
+    "/clientLogos/10.svg",
   ];
 
   const repeatedImageSources = Array.from({ length: 20 }, () => [
@@ -81,12 +72,12 @@ const Container2 = ({ content }) => {
         </div>
       </div>
       <div className={styles.clientsImgContainer}>
-        <Brands
+        {clientLogos && <Brands
           imageSources={repeatedImageSources}
           initialAnimateValue="-160%"
-          hoverDuration="600"
-          duration="650"
-        />
+          hoverDuration="100"
+          duration="20"
+        />}
       </div>
     </>
   );
