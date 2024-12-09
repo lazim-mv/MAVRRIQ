@@ -41,7 +41,7 @@ const Page = () => {
         </div>
       </div>
       <Container2 content={container2} />
-      <CardContainer content={container3} page={true} />
+      <CardContainer content={container3} page={true} mHeight="534vw" />
       <Container9 content={container9} className="omanContainer9" />
       <Container4 />
       <Container5 content={container5} />

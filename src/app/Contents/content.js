@@ -12,25 +12,12 @@ const hero = {
 const container2 = {
   sectionName: "Who are we?",
   SectionTitle: "Your Global Partner in Strategic Business Solutions",
-  aboutSectionTitle: "The Experts Behind Your Success",
-  careerSectionName: "life at mavrriq",
-  careerSectoinTitle: "Thriving Together in a Culture of Excellence",
   btnText: "About Us",
   img: "/container2/1.png",
-  careerDesc1:
-    "Life at Mavrriq Corporate Professionals is dynamic, collaborative, and driven by a passion for excellence. We believe in fostering a work environment where innovation thrives and every team member is empowered to grow and succeed. ",
-  careerDesc2:
-    "We value diverse perspectives and encourage creative thinking, knowing that our collective strength comes from the unique talents and ideas of our people. Our culture is built on mutual respect, continuous learning, and a commitment to integrity. We invest in our employees' professional development, offering opportunities for growth, mentorship, and skill-building.",
-  aboutDesc1:
-    "Mavrriq Corporate Professionals is a premier management consulting firm committed to empowering businesses with strategic solutions that drive success. With a presence in key global markets—Saudi Arabia, Oman, and India—we blend local expertise with a global perspective to provide innovative, tailored services across various industries.",
-  aboutDesc2:
-    "Our team comprises seasoned professionals with deep knowledge in corporate law, finance, taxation, and strategic consulting. We are dedicated to building long-term partnerships with our clients, helping them navigate complex challenges and capitalize on new opportunities with confidence. At Mavrriq, we prioritize excellence, integrity, and a client-centric approach, ensuring that your business reaches its full potential.",
   desc1:
     "Mavrriq Corporate Professionals is a leading global management consulting firm, empowering businesses with strategic solutions across diverse industries. Operating in key markets like Saudi Arabia, Oman, and India, we blend local expertise with a global outlook to deliver tailored services that drive success.",
   desc2:
     "Our seasoned professionals specialize in corporate law, finance, taxation, intellectual property, and IT. We are committed to building long-term client partnerships, helping navigate challenges and seize opportunities with excellence, integrity, and a client-centric approach. Wherever your business needs support, Mavrriq is here to guide you.",
-  desc3:
-    "With true results and a clear focus on the strategic actions tailored to achieve the unique expectations of our clients, we provide a detailed blueprint and picture of how to establish and manage your business in the UAE.",
 };
 
 const container3 = {
@@ -266,7 +253,7 @@ const container8Data = {
 
 const contact = {
   sectionName: "Get in Touch",
-  sectionTitle: "Don't Miss Out, Connect with Our Experts!",
+  sectionTitle: "Get in Touch with Us Today",
   btnText: "Submit",
   cardData: [
     {

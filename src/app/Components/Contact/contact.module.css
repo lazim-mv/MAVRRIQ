@@ -105,7 +105,7 @@
 .card {
   display: flex;
   gap: 0.7936507936507936vw;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 
@@ -218,6 +218,7 @@
   .card {
     width: 100%;
     gap: 3.2vw;
+    align-items: flex-start;
   }
 
   .sayHello {

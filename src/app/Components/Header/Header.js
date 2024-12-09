@@ -29,19 +29,19 @@ function Header() {
       text: "India",
       href: "/pages/India",
       img: "/header/1.png",
-      icon: "/header/arrow.png",
+      icon: "/blog/icon.png",
     },
     {
       text: "Oman",
       href: "/pages/Oman",
       img: "/header/2.png",
-      icon: "/header/arrow.png",
+      icon: "/blog/icon.png",
     },
     {
       text: "Saudi Arabia",
       href: "/pages/SaudiArabia",
       img: "/header/3.png",
-      icon: "/header/arrow.png",
+      icon: "/blog/icon.png",
     },
   ];
 

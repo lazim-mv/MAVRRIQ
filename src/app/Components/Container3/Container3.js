@@ -13,7 +13,7 @@ import bgImg from "../../../../public/bg.png";
 import mbgImg from "../../../../public/mbg.png";
 import { container3 } from "@/app/Contents/content";
 
-const Container3 = ({ content, page }) => {
+const Container3 = ({ content, page, mHeight }) => {
   const [screenSize, setScreenSize] = useState();
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -28,14 +28,14 @@ const Container3 = ({ content, page }) => {
   }
   return (
     <div className={styles.container}>
-      <div className={styles.imgContainer}>
+      <div className={styles.imgContainer} style={{ height: screenSize < 768 && mHeight }}>
         <Image
           src={screenSize > 768 ? bgImg : mbgImg}
           alt="servicesBackground"
         />
         <div className={styles.cardHeadingContent}>
-          <SectionName sectionText={container3.sectionName} dotColor="#fff" />
-          <SectionTitle sectionText={container3.SectionTitle} />
+          <SectionName sectionText={content.sectionName} dotColor="#fff" />
+          <SectionTitle sectionText={content.SectionTitle} />
         </div>
         <div className={styles.cards}>
           {cardData.map((data, index) => (

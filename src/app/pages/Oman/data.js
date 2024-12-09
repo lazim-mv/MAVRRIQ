@@ -1,7 +1,7 @@
 const firstContainer = {
   sectionTitle: "Navigating Success in Oman's Growing Economy",
   img: "/oman/1.png",
-  mImg: "/saudi/m1.png",
+  mImg: "/oman/m1.png",
 };
 
 const container2 = {

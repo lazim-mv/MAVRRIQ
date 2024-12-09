@@ -133,31 +133,30 @@
     margin-top: 16vw;
   }
 
-  .btnAbsolute {
-    bottom: 13.291005vw;
-    left: 24.2vw;
-  }
-
   .imgContainer {
     width: 91.46666666666667vw;
-    height: 476.59999999999997vw;
+    height: 518vw;
     position: relative;
   }
 
   .cardHeadingContent {
     position: absolute;
     top: 13.333333333333334vw;
-    left: 8vw;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50%, -0%);
+    align-items: center;
+    width: 100%;
   }
 
   .cardHeadingContent h2 {
-    text-align: left;
-    width: 65vw;
+    text-align: center;
+    width: 80vw;
   }
 
   .cards {
     flex-direction: column;
-    top: 47.46666666666667vw;
+    top: 38vw;
     gap: 8vw;
     left: 0;
     padding: 0 8vw;
@@ -168,21 +167,31 @@
     flex-direction: column;
     width: auto;
     border-bottom: 0.26666666666666666vw solid rgba(255, 255, 255, 0.6);
-    padding-bottom: 6.4vw;
+    /* padding-bottom: 6.4vw; */
+    padding: 5.333333333333334vw;
+    border-radius: 4.266666666666667vw;
+    align-items: flex-start;
   }
 
   .card p {
     color: #fff;
     margin-top: 2.1333333333333333vw;
+    text-align: left;
   }
 
   .card h3 {
     margin-top: 3.2vw;
     color: #fff;
+    text-align: left;
   }
 
   .card img {
     width: 13.333333333333334vw;
     height: 13.333333333333334vw;
+  }
+
+  .btnAbsolute {
+    bottom: 13.291005vw;
+    left: 24.2vw;
   }
 }

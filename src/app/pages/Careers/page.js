@@ -78,7 +78,7 @@ const Page = () => {
       </div>
 
       <Container2 content={container2} />
-      <Container3 content={container3} />
+      <Container3 content={container3} mHeight="430vw" />
 
       <Container7 />
       <Contact />

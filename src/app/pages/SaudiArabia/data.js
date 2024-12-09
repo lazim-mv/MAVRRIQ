@@ -23,35 +23,35 @@ const container3 = {
   btnText: "About Us",
   cardData: [
     {
-      img: "/oman/container3/icons/5.svg",
+      img: "/saudi/container3/icons/5.svg",
       cardHeading: "Vision 2030",
       cardDescription: "Saudi Arabia’s ambitious Vision 2030 offers vast opportunities for business expansion, with a focus on diversifying the economy beyond oil."
     },
     {
-      img: "/oman/container3/icons/1.svg",
+      img: "/saudi/container3/icons/1.svg",
       cardHeading: "Infrastructure Development",
       cardDescription: "The country is investing heavily in world-class infrastructure projects, enhancing business connectivity and opportunities."
     },
     {
-      img: "/oman/container3/icons/6.svg",
+      img: "/saudi/container3/icons/6.svg",
       cardHeading: "Government Support",
       cardDescription:
         "Saudi Arabia offers extensive support to foreign investors, including incentives, tax benefits, and simplified business regulations."
     },
     {
-      img: "/oman/container3/icons/4.svg",
+      img: "/saudi/container3/icons/4.svg",
       cardHeading: "Large Consumer Market",
       cardDescription:
         "With a population exceeding 34 million, Saudi Arabia offers a growing consumer base with increasing demand for products and services."
     },
     {
-      img: "/oman/container3/icons/3.svg",
+      img: "/saudi/container3/icons/3.svg",
       cardHeading: "Booming Non-Oil Sector",
       cardDescription:
         "With strong growth in industries like technology, healthcare, and manufacturing, Saudi Arabia provides an expanding non-oil market."
     },
     {
-      img: "/oman/container3/icons/2.svg",
+      img: "/saudi/container3/icons/2.svg",
       cardHeading: "Entrepreneurial Ecosystem",
       cardDescription:
         "The Kingdom has a rapidly growing entrepreneurial ecosystem, supported by government initiatives and venture capital, fostering startups and SMEs."

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styles from "./container3.module.css";
+import styles from "./cardContainer.module.css";
 import Image from "next/image";
 import {
     BtnComponent,
@@ -10,10 +10,10 @@ import {
 } from "../ButtonComponent";
 import { useWindowSize } from "@/app/utils/windowSize";
 import bgImg from "../../../../public/india/container3/bg.png";
-import mbgImg from "../../../../public/mbg.png";
+import mbgImg from "../../../../public/india/container3/mbg.png";
 import { container3 } from "@/app/Contents/content";
 
-const CardContainer = ({ content, page }) => {
+const CardContainer = ({ content, page, mHeight }) => {
     const [screenSize, setScreenSize] = useState();
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -23,12 +23,14 @@ const CardContainer = ({ content, page }) => {
 
     console.log(content, "content");
     const cardData = content ? content.cardData : "";
+
     if (!content) {
         return <h1>loading</h1>;
     }
+
     return (
         <div className={styles.container}>
-            <div className={styles.imgContainer}>
+            <div className={styles.imgContainer} style={{ height: screenSize < 768 && mHeight }}>
                 <Image
                     src={screenSize > 768 ? bgImg : mbgImg}
                     alt="servicesBackground"

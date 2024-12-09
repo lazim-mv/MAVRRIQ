@@ -107,10 +107,9 @@
   margin-bottom: 2.1164021164021163vw;
 }
 
-/* .descriptionContainer p:nth-child(3) {
-  margin-top: 1.5873015873015872vw;
+.descriptionContainer p:nth-child(3) {
   margin-bottom: 2.1164021164021163vw;
-} */
+}
 
 .clientsImgContainer {
   margin-top: 5.952380952380952vw;

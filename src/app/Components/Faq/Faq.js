@@ -33,10 +33,12 @@ const Container8 = () => {
         <div className={styles.firstCol}>
           <SectionName sectionText={container8Data.sectionName} />
           <SectionTitle sectionText={container8Data.sectionTitle} />
-          <BtnComponent
-            buttonText="Get Started"
-            customClassName="container2ArrowWraper"
-          />
+          <div className={styles.btnContainer}>
+            <BtnComponent
+              buttonText="Get Started"
+              customClassName="container2ArrowWraper"
+            />
+          </div>
         </div>
         <div className={styles.secondCol}>
           {cardData.map((data, index) => (
@@ -65,9 +67,8 @@ const Container8 = () => {
                   </div>
                 </div>
                 <div
-                  className={`${styles.answerContainer} ${
-                    answerVisible[index] ? styles.visible : ""
-                  }`}
+                  className={`${styles.answerContainer} ${answerVisible[index] ? styles.visible : ""
+                    }`}
                 >
                   <SectionDescription
                     sectionText={data.answer}

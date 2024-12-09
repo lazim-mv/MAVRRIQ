@@ -38,21 +38,21 @@ function MobileHeader() {
 
   const dropDownContent = [
     {
-      text: "Saudi Arabia",
-      href: "/pages/SaudiArabia/",
-      img: "/header/m1.png",
-      icon: "/header/arrow.png",
-    },
-    {
       text: "India",
       href: "/pages/India/",
-      img: "/header/m1.png",
+      img: "/header/1.png",
       icon: "/header/arrow.png",
     },
     {
       text: "Oman",
       href: "/pages/Oman/",
-      img: "/header/m1.png",
+      img: "/header/2.png",
+      icon: "/header/arrow.png",
+    },
+    {
+      text: "Saudi Arabia",
+      href: "/pages/SaudiArabia/",
+      img: "/header/3.png",
       icon: "/header/arrow.png",
     },
   ];
@@ -130,11 +130,11 @@ function MobileHeader() {
                   <>
                     <div
                       className={`linksWrapper linksText ${pathname !== undefined &&
-                          pathname !== null &&
-                          pathname !== "" &&
-                          pathname === item.href
-                          ? "active"
-                          : ""
+                        pathname !== null &&
+                        pathname !== "" &&
+                        pathname === item.href
+                        ? "active"
+                        : ""
                         } ${styles.linksWrapper} ${styles.linksText}`}
                       onClick={toggleDropdown}
                       style={{
@@ -201,11 +201,11 @@ function MobileHeader() {
                   <a
                     href={item.href}
                     className={`linksWrapper linksText ${pathname !== undefined &&
-                        pathname !== null &&
-                        pathname !== "" &&
-                        pathname === item.href
-                        ? "active"
-                        : ""
+                      pathname !== null &&
+                      pathname !== "" &&
+                      pathname === item.href
+                      ? "active"
+                      : ""
                       } ${styles.linksWrapper} ${styles.linksText}`}
                     style={{
                       transform: isMenuOpen

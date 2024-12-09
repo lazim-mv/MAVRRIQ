@@ -170,8 +170,14 @@
   }
 
   .firstCol {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+  }
+
+  .firstCol .btnContainer{
+    display: none;
   }
 
   .firstCol h2 {

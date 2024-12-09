@@ -81,7 +81,7 @@
 .card {
   display: flex;
   gap: 1.6534391534391533vw;
-  height: 13.756613756613756vw;
+  height: auto;
   background: #f5f5f5;
 
   padding: 1.984126984126984vw;

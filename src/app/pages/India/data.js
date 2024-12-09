@@ -1,7 +1,7 @@
 const firstContainer = {
   sectionTitle: "Harnessing Growth in India’s Thriving Economy",
   img: "/india/hero/1.png",
-  mImg: "/saudi/m1.png",
+  mImg: "/india/m1.png",
 };
 
 const container2 = {

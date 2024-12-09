@@ -65,8 +65,8 @@ const Container2 = ({ content }) => {
             <SectionDescription
               sectionText={content.desc2}
             />
-            {container2.desc3 &&
-              <SectionDescription sectionText={container2.desc3} />
+            {content.desc3 &&
+              <SectionDescription sectionText={content.desc3} />
             }
 
             {content?.btnText && (

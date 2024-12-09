@@ -39,7 +39,7 @@ const Container9 = ({ content, className }) => {
               start: "bottom 80%",
               end: "bottom top",
               scrub: 1,
-              markers: true,
+              // markers: true,
             },
           });
 

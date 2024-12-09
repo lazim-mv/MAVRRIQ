@@ -76,13 +76,15 @@ const Hero = () => {
             sectionText={hero.desc}
             width="57.67195767195767vw"
           />
-          <div className={styles.heroBtn}>
-            <BtnComponent
-              buttonText={hero.btnText}
-              marginTop="2.1164021164021163vw"
-              customClassName="container2ArrowWraper"
-            />
-          </div>
+          <a href="/pages/Services">
+            <div className={styles.heroBtn}>
+              <BtnComponent
+                buttonText={hero.btnText}
+                marginTop="2.1164021164021163vw"
+                customClassName="container2ArrowWraper"
+              />
+            </div>
+          </a>
         </div>
       </div>
       <div className={styles.imgContainer1}>

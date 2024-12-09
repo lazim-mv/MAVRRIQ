@@ -57,7 +57,7 @@ const page = () => {
           ))}
         </div>
       </div>
-      <Container8 />
+      <Container8 ContactPage={true} />
       <Footer />
     </>
   );

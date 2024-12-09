@@ -17,7 +17,7 @@ const container2 = {
   img: "/container2/1.png",
   desc1:
     "Mavrriq Corporate Professionals is a premier management consulting firm committed to empowering businesses with strategic solutions that drive success. With a presence in key global markets—Saudi Arabia, Oman, and India—we blend local expertise with a global perspective to provide innovative, tailored services across various industries.",
-  aboutDesc2:
+  desc2:
     "Our team comprises seasoned professionals with deep knowledge in corporate law, finance, taxation, and strategic consulting. We are dedicated to building long-term partnerships with our clients, helping them navigate complex challenges and capitalize on new opportunities with confidence. At Mavrriq, we prioritize excellence, integrity, and a client-centric approach, ensuring that your business reaches its full potential."
 };
 
