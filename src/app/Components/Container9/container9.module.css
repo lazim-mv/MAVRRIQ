@@ -50,6 +50,19 @@
 .container {
   margin-top: var(--containerMarginTop);
   padding: var(--verticalPadding);
+  height: 180vh;
+  /* width: 100vw; */
+}
+
+.oman{
+  height: 10vh;
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 4vw;
+  
+  /* overflow: hidden; */
 }
 
 .tittle {
@@ -57,6 +70,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 49.93386243386244vw;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
 
 .cards {
@@ -84,6 +102,11 @@
     flex-direction: column;
     margin-top: 16vw;
     padding: 0 6.4vw;
+    height: auto;
+  }
+
+  .tittle{
+    width: auto;
   }
 
   .firstBox {
@@ -110,6 +133,7 @@
     width: 87.2vw;
     height: 50.13333333333333vw;
     padding: 5.333333333333334vw;
+    height: auto;
   }
 
   .card h3 {

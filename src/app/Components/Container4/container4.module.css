@@ -73,7 +73,7 @@
 .left {
   width: 25.396825396825395vw;
   height: 33.06878306878307vw;
-  background: #082435;
+  background: #2d2e2e;
   border-radius: 1.5873015873015872vw;
   position: relative;
 
@@ -104,7 +104,7 @@
   gap: 0.7936507936507936vw;
   position: relative;
   z-index: 2;
-  background: #082435;
+  background: #2d2e2e;
 }
 
 .number {

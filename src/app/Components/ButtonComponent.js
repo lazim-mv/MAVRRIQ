@@ -18,10 +18,11 @@ const BtnComponent = ({
   customClassName,
   customClassNameH5,
   marginTop,
+  buttonContainerClassName,
 }) => {
   return (
     <div
-      className="buttonBackgroundSVGContatiner"
+      className={`buttonBackgroundSVGContatiner ${buttonContainerClassName}`}
       style={{ marginTop: marginTop && marginTop }}
     >
       <div className="buttonBackgroundSVG">
@@ -34,7 +35,7 @@ const BtnComponent = ({
             fillRule="evenodd"
             clipRule="evenodd"
             d="M23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46H128C134.158 46 139.75 43.5802 143.879 39.6396C146.377 37.2543 151.623 37.2543 154.121 39.6395C158.25 43.5802 163.842 46 170 46C182.703 46 193 35.7025 193 23C193 10.2975 182.703 0 170 0C163.842 0 158.25 2.41984 154.121 6.36045C151.623 8.74574 146.377 8.74574 143.879 6.36045C139.75 2.41984 134.158 0 128 0H23Z"
-            fill="#3763EB"
+            fill="#5D50A2"
           />
         </svg>
         <div className={`overLay ${customClassNameH5}`}>
@@ -146,8 +147,8 @@ const SectionTitle = ({
                 ? secondaryWordColor
                 : "inherit"
               : index === wordIndex
-              ? secondaryWordColor
-              : "inherit",
+                ? secondaryWordColor
+                : "inherit",
           }}
         >
           {word}{" "}

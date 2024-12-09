@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./careers.module.css";
 import { SectionName, SectionTitle } from "@/app/Components/ButtonComponent";
-import { container3, firstContainer } from "./data";
+import { container2, container3, firstContainer } from "./data";
 import Header from "@/app/Components/Header/Header";
 import MobileHeader from "@/app/Components/MobileHeader/MobileHeader";
 import gsap from "gsap";
@@ -58,9 +58,8 @@ const Page = () => {
         <div className={styles.movingImages} ref={containerRef}>
           {firstContainer.cardData.map((data, index) => (
             <div
-              className={`${styles.movingImage} ${
-                styles[`movingImage${index + 1}`]
-              }`}
+              className={`${styles.movingImage} ${styles[`movingImage${index + 1}`]
+                }`}
               key={index}
             >
               <img src={data} alt={`img ${index + 1}`} />
@@ -68,9 +67,8 @@ const Page = () => {
           ))}
           {firstContainer.cardData.map((data, index) => (
             <div
-              className={`${styles.movingImage} ${
-                styles[`movingImage${index + 1}`]
-              }`}
+              className={`${styles.movingImage} ${styles[`movingImage${index + 1}`]
+                }`}
               key={`duplicate-${index}`}
             >
               <img src={data} alt={`duplicate img ${index + 1}`} />
@@ -79,7 +77,7 @@ const Page = () => {
         </div>
       </div>
 
-      <Container2 page="career" />
+      <Container2 content={container2} />
       <Container3 content={container3} />
 
       <Container7 />

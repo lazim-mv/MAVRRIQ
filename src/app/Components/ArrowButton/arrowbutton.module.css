@@ -9,7 +9,7 @@
   width: 2.976190476190476vw;
   height: 2.976190476190476vw;
   background-color: transparent;
-  border: 0.06613756613756613vw solid #3763eb;
+  border: 0.06613756613756613vw solid #5D50A2;
   border-radius: 1.3227513227513228vw;
 
   display: flex;
@@ -22,7 +22,7 @@
 
 .carouselButtonContainerLeft:hover,
 .carouselButtonContainerRight:hover {
-  background-color: #2b61f7;
+  background-color: #5D50A2;
   border: none;
   transition: all 0.3s ease;
 }

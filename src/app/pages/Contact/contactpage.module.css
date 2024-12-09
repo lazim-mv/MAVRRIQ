@@ -50,7 +50,7 @@
 .firstContainer {
   margin-top: var(--containerMarginTop);
   padding: 7.936507936507936vw 9.920634920634921vw;
-  background: #082435;
+  background: #2d2e2e;
 
   display: flex;
   flex-direction: column;

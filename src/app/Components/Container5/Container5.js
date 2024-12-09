@@ -6,15 +6,14 @@ import {
   SectionName,
   SectionTitle,
 } from "../ButtonComponent";
-import { container5 } from "@/app/Contents/content";
 import Image from "next/image";
 
-const Container5 = () => {
+const Container5 = ({ content }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imgContainer}>
         <Image
-          src={container5.img}
+          src={content?.img}
           alt="Asian Engineer"
           width={100}
           height={100}
@@ -24,10 +23,11 @@ const Container5 = () => {
         />
       </div>
       <div className={styles.content}>
-        <SectionName sectionText={container5.sectionName} />
-        <SectionTitle sectionText={container5.SectionTitle} />
-        <SectionDescription sectionText={container5.desc} />
-        <BtnComponent buttonText={container5.btnText} customClassName="container2ArrowWraper" />
+        <SectionName sectionText={content?.sectionName} />
+        <SectionTitle sectionText={content?.SectionTitle} />
+        <SectionDescription sectionText={content?.desc} />
+        {content?.desc2 && <SectionDescription sectionText={content.desc2} />}
+        <BtnComponent buttonText={content?.btnText} customClassName="container2ArrowWraper" />
       </div>
     </div>
   );

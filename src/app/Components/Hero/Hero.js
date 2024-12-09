@@ -14,7 +14,7 @@ import heroImg from "../../../../public/hero/1.png";
 import mHeroImg from "../../../../public/hero/m1.png";
 import coverImage from "../../../../public/container2/1.png";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger"; // Ensure to import ScrollTrigger
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 

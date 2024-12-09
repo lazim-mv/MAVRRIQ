@@ -13,34 +13,34 @@ function Header() {
 
   const menuList = [
     { text: "Home", href: "/" },
-    { text: "About Us", href: "/pages/About/" },
+    { text: "About Us", href: "/pages/About" },
     {
       text: "Our Presence",
       href: "#",
       hasDropdown: true,
     },
-    { text: "Careers", href: "/pages/Careers/" },
-    { text: "Blogs", href: "/pages/Blogs/" },
-    { text: "Contact Us", href: "/pages/Contact/" },
+    { text: "Careers", href: "/pages/Careers" },
+    { text: "Blogs", href: "/pages/Blogs" },
+    { text: "Contact Us", href: "/pages/Contact" },
   ];
 
   const dropDownContent = [
     {
-      text: "Saudi Arabia",
-      href: "/pages/SaudiArabia/",
-      img: "/header/1.png",
-      icon: "/header/arrow.png",
-    },
-    {
       text: "India",
-      href: "/pages/India/",
+      href: "/pages/India",
       img: "/header/1.png",
       icon: "/header/arrow.png",
     },
     {
       text: "Oman",
-      href: "/pages/Oman/",
-      img: "/header/1.png",
+      href: "/pages/Oman",
+      img: "/header/2.png",
+      icon: "/header/arrow.png",
+    },
+    {
+      text: "Saudi Arabia",
+      href: "/pages/SaudiArabia",
+      img: "/header/3.png",
       icon: "/header/arrow.png",
     },
   ];
@@ -48,6 +48,8 @@ function Header() {
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
   };
+
+  console.log(pathname, "pathname");
 
   return (
     <>
@@ -76,9 +78,8 @@ function Header() {
                   {item.hasDropdown ? (
                     <>
                       <div
-                        className={`${styles.dropdownToggle} ${
-                          showDropdown ? "" : ""
-                        }`}
+                        className={`${styles.dropdownToggle} ${showDropdown ? "" : ""
+                          }`}
                         onClick={toggleDropdown}
                       >
                         {item.text}
@@ -92,14 +93,13 @@ function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`${
-                        pathname !== undefined &&
+                      className={`${pathname !== undefined &&
                         pathname !== null &&
                         pathname !== "" &&
                         pathname === item.href
-                          ? styles.active
-                          : ""
-                      }`}
+                        ? styles.active
+                        : ""
+                        }`}
                     >
                       <div>{item.text}</div>
                     </Link>
@@ -114,6 +114,7 @@ function Header() {
             buttonText="Get in Touch"
             borderColor="rgba(255, 255, 255, 0.6)"
             color="#fff"
+            buttonContainerClassName="headerButton"
           />
         </a>
 

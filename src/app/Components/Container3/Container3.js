@@ -9,8 +9,8 @@ import {
   SectionTitle,
 } from "../ButtonComponent";
 import { useWindowSize } from "@/app/utils/windowSize";
-import bgImg from "../../../../public/container3/bg.png";
-import mbgImg from "../../../../public/container3/mbg.png";
+import bgImg from "../../../../public/bg.png";
+import mbgImg from "../../../../public/mbg.png";
 import { container3 } from "@/app/Contents/content";
 
 const Container3 = ({ content, page }) => {
@@ -20,6 +20,8 @@ const Container3 = ({ content, page }) => {
       setScreenSize(window.innerWidth);
     }
   }, [screenSize]);
+
+  console.log(content, "content");
   const cardData = content ? content.cardData : "";
   if (!content) {
     return <h1>loading</h1>;

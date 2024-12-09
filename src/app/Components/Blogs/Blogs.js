@@ -9,6 +9,7 @@ import {
 } from "../ButtonComponent";
 import { blogs } from "@/app/Contents/content";
 import Image from "next/image";
+import icon from "../../../../public/blog/icon.png"
 
 const Blogs = () => {
   return (
@@ -19,13 +20,21 @@ const Blogs = () => {
         {blogs.cardData.map((data, index) => (
           <div className={styles.card} key={index}>
             <Image
+              src={icon}
+              width={98}
+              height={100}
+              alt={data.cardHeading}
+              className={styles.icon}
+            />
+            <Image
               src={data.img}
-              alt="Asian Engineer"
+              alt={data.cardHeading}
               width={100}
               height={100}
               quality={100}
               priority={true}
               unoptimized
+              className={styles.cardImg}
             />
             <div className={styles.contents}>
               <div className={styles.contentH4}>

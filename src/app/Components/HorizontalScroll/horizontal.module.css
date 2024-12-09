@@ -46,11 +46,12 @@
   --mlineHeight18: 5.624vw;
   --mletterSpace18: 0.4266666666666667vw;
 }
+
 .container {
   padding-left: 9.920634920634921vw;
   margin: var(--containerMarginTop) 0;
   height: 200vh;
-  background-color: #082435;
+  background-color: #2d2e2e;
   border-radius: 1.5873015873015872vw;
 }
 

@@ -6,7 +6,7 @@ import styles from "./mobileHeader.module.css";
 import { BtnComponent } from "../ButtonComponent";
 import { useLenis } from "@studio-freight/react-lenis";
 import logo from "../../../../public/logo.svg";
-import wlogo from "../../../../public/wLogo.svg";
+import wlogo from "../../../../public/footer/Logo.svg";
 
 function MobileHeader() {
   const pathname = usePathname();
@@ -61,7 +61,7 @@ function MobileHeader() {
     <div
       className={styles.mHeader}
       style={{
-        backgroundColor: isMenuOpen ? "#082435" : "#ffffff",
+        backgroundColor: isMenuOpen ? "#2d2e2e" : "#ffffff",
         height: "16.266666666666666vw",
         position: "fixed",
         top: 0,
@@ -129,14 +129,13 @@ function MobileHeader() {
                 {item.hasDropdown ? (
                   <>
                     <div
-                      className={`linksWrapper linksText ${
-                        pathname !== undefined &&
-                        pathname !== null &&
-                        pathname !== "" &&
-                        pathname === item.href
+                      className={`linksWrapper linksText ${pathname !== undefined &&
+                          pathname !== null &&
+                          pathname !== "" &&
+                          pathname === item.href
                           ? "active"
                           : ""
-                      } ${styles.linksWrapper} ${styles.linksText}`}
+                        } ${styles.linksWrapper} ${styles.linksText}`}
                       onClick={toggleDropdown}
                       style={{
                         cursor: "pointer",
@@ -201,14 +200,13 @@ function MobileHeader() {
                 ) : (
                   <a
                     href={item.href}
-                    className={`linksWrapper linksText ${
-                      pathname !== undefined &&
-                      pathname !== null &&
-                      pathname !== "" &&
-                      pathname === item.href
+                    className={`linksWrapper linksText ${pathname !== undefined &&
+                        pathname !== null &&
+                        pathname !== "" &&
+                        pathname === item.href
                         ? "active"
                         : ""
-                    } ${styles.linksWrapper} ${styles.linksText}`}
+                      } ${styles.linksWrapper} ${styles.linksText}`}
                     style={{
                       transform: isMenuOpen
                         ? "translateY(0)"
@@ -227,6 +225,7 @@ function MobileHeader() {
                 bg="#A0153E"
                 arrow={true}
                 color="#ffffff"
+                buttonContainerClassName="headerButton"
               />
             </a>
           </div>

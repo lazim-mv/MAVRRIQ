@@ -65,9 +65,27 @@
 
 .card {
   width: 25.396825396825395vw;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.card img {
+.card:hover .icon {
+  opacity: 1;
+  transition: all .2s ease-in;
+}
+
+.icon {
+  opacity: 0;
+  transition: all .2s ease-out;
+  position: absolute;
+  bottom: 13vw;
+
+  width: 6.481481481481481vw;
+  height: 6.547619047619048vw;
+}
+
+.cardImg {
   width: 25.396825396825395vw;
   height: 21.164021164021165vw;
 }

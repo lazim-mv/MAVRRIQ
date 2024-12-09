@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./arrowbutton.module.css";
 import Image from "next/image";
+import leftImage from "../../../../public/testimonial/left.png"
+import rightImage from "../../../../public/testimonial/right.png"
 
 const ArrowButtons = ({ nextImage, prevImage, margin, width }) => {
   return (
@@ -15,7 +17,7 @@ const ArrowButtons = ({ nextImage, prevImage, margin, width }) => {
         <Image
           width={377}
           height={420}
-          src="/testimonial/left.png"
+          src={leftImage}
           alt="arrow"
           className={styles.arrow}
         />
@@ -27,7 +29,7 @@ const ArrowButtons = ({ nextImage, prevImage, margin, width }) => {
         <Image
           width={377}
           height={420}
-          src="/testimonial/right.png"
+          src={rightImage}
           alt="arrow"
           className={styles.arrow}
         />

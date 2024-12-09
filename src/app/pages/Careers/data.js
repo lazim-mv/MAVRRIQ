@@ -13,6 +13,17 @@ const firstContainer = {
   ],
 };
 
+const container2 = {
+  sectionName: "life at mavrriq",
+  SectionTitle: "Thriving Together in a Culture of Excellence",
+  // btnText: "About Us",
+  img: "/container2/1.png",
+  desc1:
+    "Life at Mavrriq Corporate Professionals is dynamic, collaborative, and driven by a passion for excellence. We believe in fostering a work environment where innovation thrives and every team member is empowered to grow and succeed. ",
+  desc2:
+    "We value diverse perspectives and encourage creative thinking, knowing that our collective strength comes from the unique talents and ideas of our people. Our culture is built on mutual respect, continuous learning, and a commitment to integrity. We invest in our employees' professional development, offering opportunities for growth, mentorship, and skill-building.",
+};
+
 const container3 = {
   sectionName: "Benefits",
   SectionTitle: "Why You’ll Love Working Here",
@@ -56,4 +67,4 @@ const container3 = {
   ],
 };
 
-export { firstContainer, container3 };
+export { firstContainer, container3, container2 };

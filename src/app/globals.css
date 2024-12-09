@@ -162,7 +162,7 @@ a {
 }
 
 .active {
-  color: #11215b;
+  color: #5D50A2;
   font-weight: 400;
 }
 
@@ -204,7 +204,7 @@ a {
 }
 
 .buttonBackgroundSVG:hover .svgBackgroundImg path {
-  fill: #2c4fbc;
+  fill: rgba(93, 80, 162, 0.8);
   transition: fill 0.3s ease;
 }
 
@@ -235,7 +235,12 @@ a {
   transform: translate(0%, 30%);
 }
 
+.contactArrowWrapper img {
+  position: absolute;
+}
+
 .container2ArrowWraper img:nth-child(1) {
+  position: absolute;
   transform: translate(5%, 25%);
 }
 
@@ -260,6 +265,11 @@ a {
 }
 
 .buttonBackgroundSVG:hover .overLayArrow .arrowCopy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(-11%, 26%);
+}
+
+.headerButton:hover .overLayArrow .arrowCopy {
   transition: transform 0.3s ease-in-out 0.1s;
   transform: translate(-95%, 25%);
 }
@@ -298,7 +308,7 @@ a {
 }
 
 .new::before {
-  background: #3763eb !important;
+  background: #5D50A2 !important;
 }
 
 .btnContainer:hover {
@@ -391,6 +401,10 @@ a {
   z-index: -1;
 }
 
+.omanContainer9{
+  height: 100vh !important;
+}
+
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 8.533333333333333vw;
@@ -413,7 +427,7 @@ a {
   }
 
   h3 {
-    font-size:4.8vw;
+    font-size: 4.8vw;
     font-weight: 500;
     line-height: 6.933333333333333vw;
     color: #010202;
@@ -473,7 +487,7 @@ a {
   }
 
   .buttonBackgroundSVG:hover .svgBackgroundImg path {
-    fill: #2c4fbc;
+    fill: #5D50A2;
     transition: fill 0.3s ease;
   }
 
@@ -530,7 +544,12 @@ a {
 
   .buttonBackgroundSVG:hover .overLayArrow .arrowCopy {
     transition: transform 0.3s ease-in-out 0.1s;
-    transform: translate(-95%, 25%);
+    transform: translate(-11%, 26%)
+  }
+
+  .headerButton:hover .overLayArrow .arrowCopy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(-111%, 26%);
   }
 
   .buttonBackgroundSVG:hover .heroArrowWrapper .arrowCopy {
@@ -562,21 +581,18 @@ a {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
+  -webkit-mask: linear-gradient(90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent);
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scrollerInner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {

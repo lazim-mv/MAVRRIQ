@@ -11,7 +11,7 @@ import {
 import Brands from "../brands/Brands";
 import { useWindowSize } from "@/app/utils/windowSize";
 
-const Container2 = ({ page }) => {
+const Container2 = ({ content }) => {
   const imageSources = [
     "/brands/1.svg",
     "/brands/2.svg",
@@ -46,9 +46,7 @@ const Container2 = ({ page }) => {
         <div className={styles.contentContainer}>
           <span className={styles.spanSectionName}>
             <span className={styles.spanDot}></span>
-            {page === "career"
-              ? container2.careerSectionName
-              : container2.sectionName}
+            {content.sectionName}
           </span>
           <h2 className={styles.spanAndH2}>
             {isSmallScreen ? (
@@ -58,36 +56,22 @@ const Container2 = ({ page }) => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </>
             )}
-            {page === "about"
-              ? container2.aboutSectionTitle
-              : page === "career"
-              ? container2.careerSectoinTitle
-              : container2.SectionTitle}
+            {content?.SectionTitle}
           </h2>
           <div className={styles.descriptionContainer}>
             <SectionDescription
-              sectionText={
-                page === "about"
-                  ? container2.aboutDesc1
-                  : page === "career"
-                  ? container2.careerDesc1
-                  : container2.desc1
-              }
+              sectionText={content?.desc1}
             />
             <SectionDescription
-              sectionText={
-                page === "about"
-                  ? container2.aboutDesc2
-                  : page === "career"
-                  ? container2.careerDesc2
-                  : container2.desc2
-              }
+              sectionText={content.desc2}
             />
-            {/* <SectionDescription sectionText={container2.desc3} /> */}
+            {container2.desc3 &&
+              <SectionDescription sectionText={container2.desc3} />
+            }
 
-            {!page && (
+            {content?.btnText && (
               <BtnComponent
-                buttonText={container2.btnText}
+                buttonText={content?.btnText}
                 customClassName="container2ArrowWraper"
               />
             )}

@@ -3,7 +3,7 @@
 }
 
 .active {
-  color: #3763eb !important;
+  color: #5D50A2 !important;
 }
 
 .hContainer {
@@ -43,7 +43,7 @@
 }
 
 .hUlList a:hover {
-  color: #3763eb;
+  color: #5D50A2;
 }
 
 .hUlList li {

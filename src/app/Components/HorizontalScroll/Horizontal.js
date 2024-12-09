@@ -39,7 +39,6 @@ const Horizontal = () => {
         const { isDesktop, isMobile } = context.conditions;
 
         if (isDesktop) {
-          // ScrollTrigger configuration for desktop
           let sections = gsap.utils.toArray(`.${styles.card}`);
           console.log(sections, "sssssssssection");
           gsap.to(sections, {
@@ -50,6 +49,7 @@ const Horizontal = () => {
               start: "bottom 80%",
               end: "bottom top",
               scrub: 1,
+              // markers: true,
             },
           });
 

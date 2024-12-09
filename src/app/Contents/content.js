@@ -126,19 +126,13 @@ const testimonial = {
       desc: "“Mavrriq's team delivered exceptional legal and financial guidance as we expanded into new markets. Their commitment to our success is evident in everything they do.”",
       name: "Priya Menon",
       designation: "MD, Zenith Industries",
-      img: "/testimonial/P.svg",
+      img: "/testimonial/P.png",
     },
     {
       desc: "“Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and success”",
-      name: "Brooklyn Simmons",
-      designation: "Louis Vuitton",
-      img: "/testimonial/S.svg",
-    },
-    {
-      desc: "“Businesses need qualified business consulting and professional advice to win clients from all over the world. Since our inception, we have been dedicated to assisting organizations of all sizes with strategies that contribute to businesses with great performance and success”",
-      name: "Brooklyn Simmons",
-      designation: "Louis Vuitton",
-      img: "/testimonial/b.png",
+      name: "Khalid Hussain",
+      designation: "Founder, Oasis Trading Group",
+      img: "/testimonial/K.png",
     },
   ],
 };
@@ -273,14 +267,14 @@ const container8Data = {
 const contact = {
   sectionName: "Get in Touch",
   sectionTitle: "Don't Miss Out, Connect with Our Experts!",
-  btnText: "Submit Message",
+  btnText: "Submit",
   cardData: [
     {
-      text: "+44 (0) 1925 768 250",
+      text: "+91 96337 77003",
       icon: "/contact/call.svg",
     },
     {
-      text: "mavrriq@gmail.com",
+      text: "ca@mavrriq.com",
       icon: "/contact/mail.svg",
     },
     {
@@ -301,15 +295,15 @@ const footer = {
     "Businesses need qualified the in businesswin clients from all over the world. Since our inception, we have been dedicated to  picture of how to establish.",
   getInTouch: [
     {
-      text: "+91 9645013281",
+      text: "+91 96337 77003",
       icon: "/footer/call.svg",
     },
     {
-      text: "mavrriq@gmail.com",
+      text: "ca@mavrriq.com",
       icon: "/footer/mail.svg",
     },
     {
-      text: "27/1129c padmini arcade near apco hyundai calicut kerala 673004",
+      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE",
       icon: "/footer/location.svg",
     },
   ],

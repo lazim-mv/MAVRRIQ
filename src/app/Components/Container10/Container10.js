@@ -6,10 +6,8 @@ import {
   SectionName,
   SectionTitle,
 } from "../ButtonComponent";
-import { container10 } from "./data";
 
-const Container10 = () => {
-  const content = container10;
+const Container10 = ({ content }) => {
   return (
     <div className={styles.container}>
       <div className={styles.sticky}>

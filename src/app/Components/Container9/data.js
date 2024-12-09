@@ -1,5 +1,5 @@
 const container9 = {
-  sectionName: "Business Entities",
+  sectionName: "Business Formation",
   sectionTitle: "Calculate Your Business Setup Cost Now",
   cardData: [
     {

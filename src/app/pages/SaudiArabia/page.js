@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./saudi.module.css";
 import { SectionName, SectionTitle } from "@/app/Components/ButtonComponent";
-import { firstContainer } from "./data";
+import { container10, container2, container3, container5, container9, firstContainer } from "./data";
 import Header from "@/app/Components/Header/Header";
 import MobileHeader from "@/app/Components/MobileHeader/MobileHeader";
 import Container2 from "@/app/Components/Container2/Container2";
@@ -15,6 +15,7 @@ import Contact from "@/app/Components/Contact/Contact";
 import Footer from "@/app/Components/Footer/Footer";
 import Container9 from "@/app/Components/Container9/Container9";
 import Container10 from "@/app/Components/Container10/Container10";
+import CardContainer from "@/app/Components/pagesComponents/CardContainer";
 
 const Page = () => {
   const [screenSize, setScreenSize] = useState(null);
@@ -39,13 +40,13 @@ const Page = () => {
           />
         </div>
       </div>
-      <Container2 />
-      <Container3 />
-      <Container9 />
+      <Container2 content={container2} />
+      <CardContainer content={container3} page={true} />
+      <Container9 content={container9} />
       <Container4 />
-      <Container5 />
+      <Container5 content={container5} />
       <Container6 />
-      <Container10 />
+      <Container10 content={container10} />
       <Testimonial />
       <Contact />
       <Footer />

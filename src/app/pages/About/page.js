@@ -13,7 +13,7 @@ import {
 } from "@/app/Components/ButtonComponent";
 import Container2 from "@/app/Components/Container2/Container2";
 import Container5 from "@/app/Components/Container5/Container5";
-import { container3 } from "./data";
+import { container2, container3 } from "./data";
 import Testimonial from "@/app/Components/Testimonial/Testimonial";
 import Contact from "@/app/Components/Contact/Contact";
 import Footer from "@/app/Components/Footer/Footer";
@@ -45,7 +45,7 @@ const Page = () => {
           </div>
         </div>
 
-        <Container2 page="about" />
+        <Container2 content={container2} />
         <Horizontal />
 
         <div className={styles.container3}>
