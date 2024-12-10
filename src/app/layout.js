@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScrolling from "./Components/SmoothScroll/SmoothScrolling";
 import { headers } from "next/headers";
+import UnderMaintainance from "./Components/undermaintainance/UnderMaintainance";
 
 const inter = Inter({ subsets: ["latin"] });
 
