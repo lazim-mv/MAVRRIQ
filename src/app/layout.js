@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScrolling from "./Components/SmoothScroll/SmoothScrolling";
+import { headers } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +11,21 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  const header = headers();
+  const host = header.get("x-host");
+
+  console.log(host, "hosttt");
+  if (host === "www.mavrriq.com") {
+    return (
+      <html lang="en">
+        <body className={inter.className}>
+          <UnderMaintainance />
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="en">
       <head>
@@ -22,7 +38,7 @@ export default function RootLayout({ children }) {
 
         <meta
           property="og:image"
-          // content="https://loopify-zeta.vercel.app/openGraphImage.jpg"
+        // content="https://loopify-zeta.vercel.app/openGraphImage.jpg"
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />

@@ -22,7 +22,7 @@ const container2 = {
 
 const container3 = {
   sectionName: "Our Services",
-  SectionTitle: "Comprehensive Services to Empower Your Business Across Borders",
+  SectionTitle: "Services to Empower Your Business Across Borders",
   btnText: "About Us",
   cardData: [
     {
