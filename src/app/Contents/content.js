@@ -282,7 +282,7 @@ const footer = {
   logo: "/footer/logo.svg",
   copyRight: "© 2024  All Right Reserved | Powered by procube.cx",
   tagLine:
-    "Businesses need qualified the in businesswin clients from all over the world. Since our inception, we have been dedicated to  picture of how to establish.",
+    "Mavrriq Corporate Professionals offers tailored business solutions with global expertise and local insight, specializing in consulting, legal compliance, and financial services.",
   getInTouch: [
     {
       text: "+91 96337 77003",
