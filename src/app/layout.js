@@ -33,14 +33,14 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/favIcon.svg"
+          href="/favicon.svg"
           type="image/svg+xml"
           sizes="16x16 32x32 48x48"
         />
 
         <meta
           property="og:image"
-        // content="https://loopify-zeta.vercel.app/openGraphImage.jpg"
+          content="https://www.mavrriq.com/opengraphimage.png"
         />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1024" />
