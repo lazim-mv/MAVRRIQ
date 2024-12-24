@@ -267,7 +267,7 @@ const contact = {
       link: "mailto:ca@mavrriq.com",
     },
     {
-      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE",
+      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE, Calicut, Kerala, India",
       icon: "/contact/location.svg",
       link: "",
     },
@@ -293,7 +293,7 @@ const footer = {
       icon: "/footer/mail.svg",
     },
     {
-      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE",
+      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE, Calicut, Kerala, India",
       icon: "/footer/location.svg",
     },
   ],

@@ -14,7 +14,7 @@ const firstContainer = {
           icon: "/footer/mail.svg",
         },
         {
-          text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE",
+          text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE, Calicut, Kerala, India",
           icon: "/footer/location.svg",
         },
       ],
