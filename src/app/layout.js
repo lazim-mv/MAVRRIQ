@@ -17,7 +17,8 @@ export default function RootLayout({ children }) {
   const host = header.get("x-host");
 
   console.log(host, "hosttt");
-  if (host === "www.mavrriq.com") {
+  // if (host === "www.mavrriq.com") {
+  if (host === "") {
     return (
       <html lang="en">
         <body className={inter.className}>

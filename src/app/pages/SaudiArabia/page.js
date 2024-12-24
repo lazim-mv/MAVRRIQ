@@ -42,8 +42,8 @@ const Page = () => {
       </div>
       <Container2 content={container2} />
       <CardContainer content={container3} page={true} mHeight="518vw" />
-      <Container9 content={container9} scrollLength={1}/>
-      <Container4 />
+      <Container9 content={container9} scrollLength={1} />
+      {/* <Container4 /> */}
       <Container5 content={container5} />
       <Container6 />
       <Container10 content={container10} />
