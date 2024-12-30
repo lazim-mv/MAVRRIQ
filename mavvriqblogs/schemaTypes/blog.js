@@ -11,10 +11,15 @@ export const blogType = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'subtitle',
-      title: 'Subtitle',
-      type: 'string',
+      name: 'time_to_read',
+      title: 'Time To Read',
+      type: 'number',
     }),
+    // defineField({
+    //   name: 'subtitle',
+    //   title: 'Subtitle',
+    //   type: 'string',
+    // }),
     defineField({
       name: 'image',
       title: 'Main Image',
@@ -23,11 +28,11 @@ export const blogType = defineType({
         hotspot: true,
       },
     }),
-    defineField({
-      name: 'publishedAt',
-      title: 'Published At',
-      type: 'datetime',
-    }),
+    // defineField({
+    //   name: 'publishedAt',
+    //   title: 'Published At',
+    //   type: 'datetime',
+    // }),
     defineField({
       name: 'slug',
       title: 'Slug',
@@ -37,6 +42,40 @@ export const blogType = defineType({
         maxLength: 96,
       },
     }),
+    // defineField({
+    //   name: 'content',
+    //   title: 'Content',
+    //   type: 'array',
+    //   of: [
+    //     {
+    //       type: 'object',
+    //       fields: [
+    //         {
+    //           name: 'content',
+    //           title: 'Content',
+    //           type: 'text',
+    //         },
+    //         {
+    //           name: 'type',
+    //           title: 'Type',
+    //           type: 'string',
+    //           options: {
+    //             list: [
+    //               {title: 'Subheading', value: 'subheading'},
+    //               {title: 'Content', value: 'content'},
+    //             ],
+    //           },
+    //         },
+    //         {
+    //           name: 'ul', // Field for unordered list items
+    //           title: 'Unordered List Items',
+    //           type: 'array',
+    //           of: [{type: 'string'}], // Changed to string type
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // }),
     defineField({
       name: 'content',
       title: 'Content',
@@ -57,27 +96,41 @@ export const blogType = defineType({
               options: {
                 list: [
                   {title: 'Subheading', value: 'subheading'},
-                  {title: 'Content', value: 'content'},
-                  {title: 'Unordered List', value: 'ul'}, // Added unordered list type
+                  {title: 'Paragraph', value: 'paragraph'},
                 ],
               },
             },
+          ],
+        },
+        {
+          type: 'image', // Image block
+          name: 'image',
+          title: 'Image',
+          options: {
+            hotspot: true, // Enable image hotspot for cropping
+          },
+          fields: [
             {
-              name: 'ul', // Field for unordered list items
-              title: 'Unordered List Items',
-              type: 'array',
-              of: [{type: 'string'}], // Changed to string type
+              name: 'alt',
+              title: 'Alt Text',
+              type: 'string',
+              description: 'A short description of the image for accessibility.',
             },
           ],
         },
       ],
     }),
     defineField({
-      name: 'tags',
-      title: 'Tags',
-      type: 'array',
-      of: [{type: 'string'}],
-      initialValue: ['All'],
+      name: 'priority',
+      title: 'Priority',
+      type: 'number',
     }),
+    // defineField({
+    //   name: 'tags',
+    //   title: 'Tags',
+    //   type: 'array',
+    //   of: [{type: 'string'}],
+    //   initialValue: ['All'],
+    // }),
   ],
 })
