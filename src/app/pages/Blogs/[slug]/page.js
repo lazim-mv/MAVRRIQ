@@ -97,7 +97,7 @@ export default function BlogPost({ params }) {
                 {blogPost.content.map((block, index) => {
                   if (block.type === "subheading") {
                     return (
-                      <div key={index} style={{ padding: "1.5rem 0 1rem 0" }}>
+                      <div key={index} style={{ padding: "0.5rem 0 1rem 0" }}>
                         <CardHeading sectionText={block.content} />
                       </div>
                     );
@@ -108,16 +108,18 @@ export default function BlogPost({ params }) {
                           src={getImageUrl(block.asset._ref)}
                           alt="blog image"
                           className={styles.optionalImage}
-                          style={{ marginTop: "1.5rem" }}
+                          style={{ margin: "1.5rem 0 1rem 0" }}
                         />
                       </div>
                     );
                   } else {
                     return (
-                      <SectionDescription
-                        key={index}
-                        sectionText={block.content}
-                      />
+                      <div style={{ padding: "0 0 1rem 0" }}>
+                        <SectionDescription
+                          key={index}
+                          sectionText={block.content}
+                        />
+                      </div>
                     );
                   }
                 })}
