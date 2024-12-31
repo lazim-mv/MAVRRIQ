@@ -3,6 +3,7 @@
   --verticalPadding: 0 9.920634920634921vw;
   --containerPadding: 0 6.613756613756613vw;
   --containerMarginTop: 9.25925925925926vw;
+
   --backgroundContainerPadding: 6.510416666666667vw 9.765625vw;
   --mobileContainerMarginTop: 16vw;
   --mobileContainerPadding: 0 6.4vw;
@@ -55,12 +56,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.2rem;
 }
 
 .cards {
   margin-top: 4.62962962962963vw;
   display: flex;
   gap: 1.984126984126984vw;
+  overflow-x: scroll;
+  width: 100vw;
+  padding: 0 9rem;
 }
 
 .card {
@@ -68,16 +73,17 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .card:hover .icon {
   opacity: 1;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .icon {
   opacity: 0;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   position: absolute;
   bottom: 13vw;
 
@@ -86,8 +92,10 @@
 }
 
 .cardImg {
-  width: 25.396825396825395vw;
-  height: 21.164021164021165vw;
+  width: 25.396825396825395vw !important;
+  height: 21.164021164021165vw !important;
+  object-fit: cover;
+  border-radius: 1.5rem;
 }
 
 .contentH4 {
@@ -107,7 +115,22 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .container {
-    display: none;
+  .icon {
+    display: none !important;
+  }
+  .cards {
+    gap: 1.5rem;
+    padding: 0 4.266666666666667vw;
+  }
+  .card {
+    width: 66.66666666666666vw;
+    height: 23rem !important;
+  }
+  .cardImg {
+    width: 100% !important;
+    height: 55.55466666666668vw !important;
+  }
+  .btnContainer {
+    margin-top: 9vw;
   }
 }
