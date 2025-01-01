@@ -121,11 +121,11 @@
   .cards {
     gap: 1.5rem;
     padding: 0 4.266666666666667vw;
+    overflow-x: scroll !important;
   }
   .card {
     width: 66.66666666666666vw;
     height: 23rem !important;
-    overflow-x: scroll;
   }
   .cardImg {
     width: 100% !important;
