@@ -233,7 +233,7 @@
   background-position: calc(100% - 0.75vw) center;
   background-size: 1vw;
   border: 1px solid white;
-  border-radius: 1rem;
+  border-radius: 4rem;
   padding: 0.35rem 0.5rem;
   outline: none;
   position: relative;
@@ -273,7 +273,7 @@
   }
 
   .sectionTitle {
-    width: 83.2vw;
+    width: 83.8vw;
   }
 
   .greyContainer {
