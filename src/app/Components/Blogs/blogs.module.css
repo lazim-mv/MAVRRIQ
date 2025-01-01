@@ -63,7 +63,7 @@
   margin-top: 4.62962962962963vw;
   display: flex;
   gap: 1.984126984126984vw;
-  overflow-x: scroll;
+  overflow-x: hidden;
   width: 100vw;
   padding: 0 9rem;
 }
@@ -95,7 +95,7 @@
   width: 25.396825396825395vw !important;
   height: 21.164021164021165vw !important;
   object-fit: cover;
-  border-radius: 1.5rem;
+  border-radius: 1.5873015873015872vw;
 }
 
 .contentH4 {
@@ -125,6 +125,7 @@
   .card {
     width: 66.66666666666666vw;
     height: 23rem !important;
+    overflow-x: scroll;
   }
   .cardImg {
     width: 100% !important;

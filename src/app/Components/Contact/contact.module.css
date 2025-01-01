@@ -170,7 +170,7 @@
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path d="M0 0l5 6 5-6z" fill="%23272728"/></svg>');
+  background-image: url("/blackDownArrow.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 1vw) center;
   background-size: 1vw;
@@ -228,7 +228,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #2d2e2e;
-  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path d="M0 0l5 6 5-6z" fill="white"/></svg>');
+  background-image: url("/whiteDownArrow.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 0.75vw) center;
   background-size: 1vw;
