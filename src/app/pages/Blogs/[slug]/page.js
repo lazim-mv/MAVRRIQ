@@ -114,11 +114,8 @@ export default function BlogPost({ params }) {
                     );
                   } else {
                     return (
-                      <div style={{ padding: "0 0 1rem 0" }}>
-                        <SectionDescription
-                          key={index}
-                          sectionText={block.content}
-                        />
+                      <div key={index} style={{ padding: "0 0 1rem 0" }}>
+                        <SectionDescription sectionText={block.content} />
                       </div>
                     );
                   }
