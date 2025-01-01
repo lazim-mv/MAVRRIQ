@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'mavvriqBlogs',
 
-  projectId: '33n4kmv8',
+  projectId: 'nnttw2dj',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],

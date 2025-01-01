@@ -112,7 +112,7 @@ const Footer = () => {
           </div>
           <div className={styles.copyRightContainer}>
             <p className={styles.copyRight}>
-              © 2024 All Right Reserved | Powered by procube.cx
+              © 2025 All Right Reserved | Powered by procube.cx
             </p>
           </div>
         </div>

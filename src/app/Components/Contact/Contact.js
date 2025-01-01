@@ -5,6 +5,35 @@ import { BtnComponent, SectionName, SectionTitle } from "../ButtonComponent";
 import { contact } from "@/app/Contents/content";
 import Image from "next/image";
 
+const contactData = [
+  {
+    id: 1,
+    name: "India",
+    phone: "+91 96337 77003",
+    tel: "+91 96337 77003",
+    email: "ca@mavrriq.com",
+    location: "27/1129c Padmini Arcade near Apco Hyundai calicut kerala 673004",
+  },
+  {
+    id: 1,
+    name: "Saudi Arabia",
+    phone: "+966 511587575, +966 511597575",
+    tel: "+966 511587575",
+    email: "ca@mavrriq.com",
+    location:
+      "Office No:318, Building No: 7097, 2106, Jabor bin Rashid Road, Al Murabba, Riyadh, 12628 Riyadh, KSA",
+  },
+  {
+    id: 1,
+    name: "Oman",
+    phone: "+968 77208850",
+    tel: "+968 77208850",
+    email: "ca@mavrriq.com",
+    location:
+      "Office No. 201, 2nd Floor, Majan1 Building, PO Box 114, postal code 315, Ghala Heights, Muscat",
+  },
+];
+
 const Contact = () => {
   const cardData = contact.cardData;
   const [formData, setFormData] = useState({
@@ -23,6 +52,18 @@ const Contact = () => {
   const handleSubmit = (e) => {
     console.log(formData, "Don't Click");
   };
+
+  const [selectedCountry, setSelectedCountry] = useState("India");
+
+  const handleChangeDrop = (e) => {
+    setSelectedCountry(e.target.value);
+  };
+
+  // Filter data based on the selected country
+  const filteredData = contactData.filter(
+    (data) => data.name === selectedCountry
+  );
+
   return (
     <div className={styles.container}>
       <SectionName sectionText={contact.sectionName} />
@@ -33,22 +74,87 @@ const Contact = () => {
       <div>
         <div className={styles.greyContainer}>
           <div className={styles.left}>
-            <h3 className={styles.sayHello}>Say Hello.</h3>
+            <div className={styles.leftInner}>
+              <h3 className={styles.sayHello}>Say Hello.</h3>
+              <div>
+                <select
+                  id="subject"
+                  name="subject"
+                  value={selectedCountry}
+                  onChange={handleChangeDrop}
+                  className={styles.customSelect}
+                  required
+                >
+                  <option value="India">India</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                </select>
+              </div>
+            </div>
             <div className={styles.cards}>
-              {cardData.map((data, index) => (
-                <div className={styles.card} key={index}>
-                  <Image
-                    src={data.icon}
-                    alt="Asian Engineer"
-                    width={100}
-                    height={100}
-                    quality={100}
-                    priority={true}
-                    unoptimized
-                  />
-                  <a className={styles.cardLink} href={data.link}>
-                    <h3>{data.text}</h3>
+              {filteredData.map((data) => (
+                // <div className={styles.card} key={data.id}>
+                <div key={data.id}>
+                  <a
+                    href={`tel:${data.tel}`}
+                    className={styles.contactDynamicData}
+                  >
+                    <Image
+                      src="/contact/call.svg"
+                      alt={`${data.name} Office`}
+                      width={100}
+                      height={100}
+                      quality={100}
+                      priority={true}
+                      unoptimized
+                      className={styles.contactIcon}
+                    />
+
+                    <p style={{ color: "white" }}>
+                      {data.phone.split(",").map((phone, index) => (
+                        <span key={index}>
+                          {index === 1 && <br />}
+
+                          {phone.trim()}
+                        </span>
+                      ))}
+                    </p>
                   </a>
+                  <a
+                    href={`mailto:${data.email}`}
+                    className={styles.contactDynamicData}
+                  >
+                    <Image
+                      src="/contact/mail.svg"
+                      alt={`${data.name} Office`}
+                      width={100}
+                      height={100}
+                      quality={100}
+                      priority={true}
+                      unoptimized
+                      className={styles.contactIcon}
+                    />
+
+                    <p style={{ color: "white" }}>{data.email}</p>
+                  </a>
+
+                  <div
+                    className={styles.contactDynamicData}
+                    style={{ alignItems: "flex-start" }}
+                  >
+                    <Image
+                      src="/contact/location.svg"
+                      alt={`${data.name} Office`}
+                      width={100}
+                      height={100}
+                      quality={100}
+                      priority={true}
+                      unoptimized
+                      className={styles.contactIcon}
+                    />
+
+                    <p style={{ color: "white" }}>{data.location}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -88,7 +194,7 @@ const Contact = () => {
                   placeholder="Phone Number"
                 />
               </div>
-              <div className={styles.input}>
+              {/* <div className={styles.input}>
                 <input
                   type="text"
                   id="subject"
@@ -98,6 +204,23 @@ const Contact = () => {
                   required
                   placeholder="Subject"
                 />
+              </div> */}
+              <div className={styles.input}>
+                <select
+                  id="subject"
+                  name="subject"
+                  className={styles.selectTag}
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="" disabled className={styles.optionsContainer}>
+                    Select a country
+                  </option>
+                  <option value="India">India</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                </select>
               </div>
               <div className={styles.textBox}>
                 <textarea

@@ -2,7 +2,14 @@
 import React, { useEffect, useState } from "react";
 import styles from "./oman.module.css";
 import { SectionName, SectionTitle } from "@/app/Components/ButtonComponent";
-import { container10, container2, container3, container5, container9, firstContainer } from "./data";
+import {
+  container10,
+  container2,
+  container3,
+  container5,
+  container9,
+  firstContainer,
+} from "./data";
 import Header from "@/app/Components/Header/Header";
 import MobileHeader from "@/app/Components/MobileHeader/MobileHeader";
 import Container2 from "@/app/Components/Container2/Container2";
@@ -46,7 +53,7 @@ const Page = () => {
       {/* <Container4 /> */}
       <Container5 content={container5} />
       <Container6 />
-      <Container10 content={container10} />
+      {/* <Container10 content={container10} /> */}
       <Testimonial />
       <Contact />
       <Footer />

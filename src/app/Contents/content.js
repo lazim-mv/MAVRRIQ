@@ -17,7 +17,7 @@ const container2 = {
   desc1:
     "Mavrriq Corporate Professionals is a leading global management consulting firm, empowering businesses with strategic solutions across diverse industries. Operating in key markets like Saudi Arabia, Oman, and India, we blend local expertise with a global outlook to deliver tailored services that drive success.",
   desc2:
-    "Our seasoned professionals specialize in corporate law, finance, taxation, intellectual property, and IT. We are committed to building long-term client partnerships, helping navigate challenges and seize opportunities with excellence, integrity, and a client-centric approach. Wherever your business needs support, Mavrriq is here to guide you.",
+    "Our seasoned professionals specialize in corporate law, finance, taxation, intellectual property. We are committed to building long-term client partnerships, helping navigate challenges and seize opportunities with excellence, integrity, and a client-centric approach. Wherever your business needs support, Mavrriq is here to guide you.",
 };
 
 const container3 = {
@@ -25,6 +25,19 @@ const container3 = {
   SectionTitle: "Services to Empower Your Business Across Borders",
   btnText: "About Us",
   cardData: [
+    {
+      img: "/container3/icons/4.svg",
+      cardHeading: "Audit & Taxation",
+      cardDescription:
+        "Comprehensive audit services to ensure financial transparency and regulatory compliance across all jurisdictions.",
+    },
+    {
+      img: "/container3/icons/3.svg",
+      cardHeading: "Financial & Accounting",
+      cardDescription:
+        "Specialized financial management services, including tax planning, accounting, and bookkeeping, to optimize financial performance.",
+    },
+
     {
       img: "/container3/icons/1.svg",
       cardHeading: "Company Formation",
@@ -37,18 +50,7 @@ const container3 = {
       cardDescription:
         "Tailored market analysis, strategic planning, and risk management to help businesses navigate and thrive in dynamic markets.",
     },
-    {
-      img: "/container3/icons/3.svg",
-      cardHeading: "Financial & Accounting",
-      cardDescription:
-        "Specialized financial management services, including tax planning, accounting, and bookkeeping, to optimize financial performance.",
-    },
-    {
-      img: "/container3/icons/4.svg",
-      cardHeading: "Audit & Taxation",
-      cardDescription:
-        "Comprehensive audit services to ensure financial transparency and regulatory compliance across all jurisdictions.",
-    },
+
     {
       img: "/container3/icons/5.svg",
       cardHeading: "Virtual CFO",
@@ -75,7 +77,7 @@ const container4 = {
 const container5 = {
   sectionName: "Why Choose Us",
   SectionTitle: "Empowering Your Business with Expert Solutions",
-  desc: "We are committed to being your trusted partner in business success. Our unique blend of global expertise and local insight allows us to deliver innovative, tailored solutions that drive growth and efficiency. Whether you're expanding into new markets or optimizing your current operations, our seasoned professionals bring years of experience in corporate law, finance, taxation, and strategic consulting to meet your specific needs. We pride ourselves on our client-centric approach, building long-term partnerships founded on integrity, excellence, and unwavering support. Choose Mavrriq for reliable, customized services that propel your business forward..",
+  desc: "We are your trusted partner in business success, combining global expertise with local insight to deliver customized solutions. From market expansion to operational optimization, our experienced team offers tailored support in corporate law, finance, taxation, and strategy. We build long-term partnerships based on integrity, excellence, and client-focused service. Choose us for reliable solutions that drive growth and efficiency.",
   btnText: "Know More",
   img: "/container5/1.png",
 };
@@ -220,14 +222,14 @@ const container8Data = {
       number: "01",
       question: "What services does Mavrriq Corporate Professionals offer?",
       answer:
-        "We specialize in a variety of industries, including manufacturing, technology, retail, healthcare, and financial services. Our team has deep industry knowledge and experience, enabling us to offer strategic insights and practical solutions that are relevant to your sector.",
+        "Mavrriq offers a wide range of services, including business consulting, Audit and Assurance, Accounting and Book keeping, Business consulting, Virtual CFO, ISO Certification etc. Our expertise spans multiple industries and regions, allowing us to provide tailored solutions to meet your specific business needs.",
       isAnswerVisible: true,
     },
     {
       number: "02",
-      question: "Which industries does Mavrriq specialize in?",
+      question: "Which regions do Mavrriq specialise in?",
       answer:
-        "We combine global expertise with local insights to ensure that our services are culturally and legally relevant to each region we operate in. Our teams in Saudi Arabia, Oman, and India are well-versed in the unique regulatory, economic, and cultural environments of each market, allowing us to tailor our solutions effectively.",
+        "Mavrriq specializes in providing business consulting and support across Saudi Arabia, Oman, India, and the UAE. With expertise in navigating diverse regulatory landscapes, we offer tailored solutions for each region's unique business environment.",
     },
     {
       number: "03",
@@ -267,7 +269,7 @@ const contact = {
       link: "mailto:ca@mavrriq.com",
     },
     {
-      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE, Calicut, Kerala, India",
+      text: "Room No: 27/1403, 2nd Floor, PADMINI ARCADE, Calicut, Kerala, India",
       icon: "/contact/location.svg",
       link: "",
     },
@@ -277,7 +279,7 @@ const contact = {
 const footer = {
   bg: "/footer/bg.png",
   mBg: "/footer/mbg.png",
-  sectionTitle: "Let’s discuss and bring your vision to life.",
+  sectionTitle: "Let's Connect",
   btnText: "Contact Us",
   logo: "/footer/logo.svg",
   copyRight: "© 2024  All Right Reserved | Powered by procube.cx",

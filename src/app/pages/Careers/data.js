@@ -56,7 +56,7 @@ const container3 = {
       img: "/career/icons/5.svg",
       cardHeading: "Competitive Packages",
       cardDescription:
-        "Mavrriq offers a comprehensive benefits package, including competitive salaries, health insurance, and performance-based incentives.",
+        "Mavrriq offers a comprehensive benefits package, including competitive salaries, and performance-based incentives.",
     },
     {
       img: "/career/icons/5.svg",
