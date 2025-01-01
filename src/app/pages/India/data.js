@@ -69,7 +69,8 @@ const container5 = {
 
 const container9 = {
   sectionName: "Business Formation",
-  sectionTitle: "Comprehensive Business Formation Services Tailored to Your Needs",
+  sectionTitle:
+    "Comprehensive Business Formation Services Tailored to Your Needs",
   cardData: [
     {
       heading: "Partnership Firm.",
@@ -93,13 +94,11 @@ const container9 = {
     },
     {
       heading: "Trust",
-      desc:
-        "A Trust is created for charitable or religious purposes. It allows donors to manage property or assets for the benefit of others, usually under specific legal terms.",
+      desc: "A Trust is created for charitable or religious purposes. It allows donors to manage property or assets for the benefit of others, usually under specific legal terms.",
     },
     {
       heading: "GEM Registration",
-      desc:
-        "GeM registration allows businesses to sell goods and services to the government. It provides a transparent, online platform for public procurement in India."
+      desc: "GeM registration allows businesses to sell goods and services to the government. It provides a transparent, online platform for public procurement in India.",
     },
   ],
 };
@@ -115,18 +114,18 @@ const container10 = {
     },
     {
       number: "02",
-      heading: "Company Name Reservation",
-      desc: "We assist in verifying and reserving your business name through the Ministry of Corporate Affairs (MCA).",
+      heading: "Business Registration and Licensing",
+      desc: "Our team manages the registration process and ensures all required licenses are obtained for your operations.",
     },
     {
       number: "03",
-      heading: "Document Preparation and Filing",
-      desc: "Our team handles drafting and submitting necessary documents, including Memorandum and Articles of Association.",
+      heading: "Securing Compliance Certificates",
+      desc: "We assist in acquiring essential compliance certifications like GST, PAN, and other regulatory approvals.",
     },
     {
       number: "04",
-      heading: "Registration and Approvals",
-      desc: "We guide you through obtaining the necessary approvals, licenses, and tax registrations like GST and PAN.",
+      heading: "Drafting Essential Legal Documents",
+      desc: "We prepare key legal documents, including Memorandum and Articles of Association, to meet legal requirements.",
     },
     {
       number: "05",
@@ -141,4 +140,11 @@ const container10 = {
   ],
 };
 
-export { firstContainer, container3, container2, container10, container9, container5 };
+export {
+  firstContainer,
+  container3,
+  container2,
+  container10,
+  container9,
+  container5,
+};
